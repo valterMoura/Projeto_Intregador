@@ -119,6 +119,7 @@ public class ToRunAway {
         		System.out.println("Opção inválida!!");
         	}
         }while(escolha!=1 && escolha!=2);
+        //Daimon
 	}
 
 }
