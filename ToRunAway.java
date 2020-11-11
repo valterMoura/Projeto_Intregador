@@ -105,6 +105,7 @@ public class ToRunAway {
         			}else {
         				System.out.println("Opção inválida!");
         			}
+        			System.out.println("teste");//victor
         		}
         	}else if(escolha == 2) {
         		System.out.println("Ok, eu entendo que você quer jogar logo. Mas precisamos escolher suas características antes!");
