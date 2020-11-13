@@ -1,9 +1,8 @@
 import java.util.Scanner;
 
 public class ToRunAway {
-
-	public static void main(String[] args) {
-		Scanner entrada = new Scanner(System.in);
+	static Scanner entrada = new Scanner(System.in);
+	static void menu () {
 		// variaveis.
 		int opcao;
 		String nome, sexo;
@@ -65,7 +64,9 @@ public class ToRunAway {
 				System.out.println("Opção inválida, renda-se e venha testar suas habilidades de jogador!");
 		}
         }while(opcao == 2);
-        int escolha;
+	}
+	static void caracteristica() {
+		 int escolha;
 
         do {
         	System.out.println("1 - Conte-me mais sobre o que vou vivenciar, por favor!!");
@@ -120,6 +121,12 @@ public class ToRunAway {
         	}
         }while(escolha!=1 && escolha!=2);
         //Daimon
+	}
+	public static void main(String[] args) {
+		menu ();
+		caracteristica();
+		
+       
 	}
 
 }
