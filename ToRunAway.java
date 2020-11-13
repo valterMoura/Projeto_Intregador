@@ -37,13 +37,13 @@ public class ToRunAway {
 								"e para o "+nome+" fugir, terá que hackear o sistema de segurança e fugir de todos os \nseguranças da empresa, que estão localizados em pontos estratégios para que ninguém saia sem ser visto.\n");
 			}else if(sexo.equalsIgnoreCase("F")) {
 				System.out.println("\nÓtimo, agora vamos ao jogo!! Para iniciar, conheça sua história: \n");
-				System.out.println("Um jovem programador, chamado " + nome + " trabalha há pouco tempo na empresa TI Universal,"
-						+ " empresa que estava sofrendo roubo de informações sigilosas por \nhackers, " + nome + " por ser novato, foi utilizado como laranja pelos hackers."
-								+ " Os hackers, que também trabalhavam na mesma empresa, implantaram muitas \nprovas no usuário do sistema no qual " + nome + " trabalhava, sem que a mesma soubesse.\n\n"+
+				System.out.println("Uma jovem programadora, chamada " + nome + " trabalha há pouco tempo na empresa TI Universal,"
+						+ " empresa que estava sofrendo roubo de informações sigilosas por \nhackers, " + nome + " por ser novata, foi utilizada como laranja pelos hackers."
+								+ " Os hackers, que também trabalhavam na mesma empresa, implantaram muitas \nprovas no usuário do sistema na qual " + nome + " trabalhava, sem que a mesma soubesse.\n\n"+
 						"A TI Universal contratou uma equipe de hackers para descobrir quem estava roubando essas informações da empresa e divulgando-as, ao descobrir as \nprovas implantadas no nome de "+
-								nome+", o presidente da empresa aciona a segurança para que localize e capture o jovem programador. \n\nNesse exato momento o sistema de segurança do predio é acionado para que "+
-						"ele não fuja. O sistema de segurança, bloqueia os elevadores que só podem \ndescer um andar, portas e janela são trancadas automaticamente, "+
-								"e para o "+nome+" fugir, terá que hackear o sistema de segurança e fugir de todos os \nseguranças da empresa, que estão localizados em pontos estratégios para que ninguém saia sem ser vista.\n");
+								nome+", o presidente da empresa aciona a segurança para que localize e capture a jovem programadora. \n\nNesse exato momento o sistema de segurança do predio é acionado para que "+
+						"ela não fuja. O sistema de segurança, bloqueia os elevadores que só podem \ndescer um andar, portas e janela são trancadas automaticamente, "+
+								"e para a "+nome+" fugir, terá que hackear o sistema de segurança e fugir de todos os \nseguranças da empresa, que estão localizados em pontos estratégios para que ninguém saia sem ser visto.\n");
 			}
 			break;
 			
