@@ -63,14 +63,14 @@ public class ToRunAway {
 			default:
 				System.out.println("Opção inválida, renda-se e venha testar suas habilidades de jogador!");
 		}
-        }while(opcao == 2);
+        }while(opcao == 3 || opcao == 2);
 	}
 	static void caracteristica() {
 		 int escolha;
 
         do {
         	System.out.println("1 - Conte-me mais sobre o que vou vivenciar, por favor!!");
-        	System.out.println("2 - Chega de papo furado e vamos jogar logo?!");
+        	
         	escolha = entrada.nextInt();
         	
         	if(escolha == 1) {
@@ -79,8 +79,8 @@ public class ToRunAway {
         		"os seguranças e conseguir fugir do prédio sem ser capturado(a). Em cada andar, além de despistar os seguranças, você precisará resolver algumas escolhas \nobjetivas e tomar uma decisão envolvendo lógica " + 
         		"Mas para te auxiliar nesses desafios, você poderá escolher seu perfil. Ele será formado por características escolhidas /npor você, mas não se empolgue, você precisará priorizar algumas. É meu(inha) caro(a), não podemos ter tudo na vida né?" + 
         		" Entendeu o que espera você pela frente? Podemos ir para a parte onde você monta seu perfil que irá perder... ops! ganhar o jogo? ");
-        		System.out.println("1 - SIM");
-        		System.out.println("2 - NÃO, estou com medo e quero desistir!");
+        		System.out.println("1 - Continuar");
+        		
         		int perfil = entrada.nextInt();
         		
         		if( perfil == 1) {
@@ -90,37 +90,11 @@ public class ToRunAway {
         			System.out.println("Opção 3 = Força: 4, Inteligência: 1, Lógica: 2");
         			System.out.println("Escolha sua opção:");
         			int caract = entrada.nextInt();
-        		}else {
-        			System.out.println("Achei que você fosse mais corajoso(a). Quer desistir mesmo? 1 Sim, 2 Não.");
-        			int desistir = entrada.nextInt();
-        			if (desistir == 1) {
-        				System.out.println("\nQue pena, quem sabe outro dia você volta! Foi um prazer te conhecer, até logo!");
-        			}else if(desistir ==2) {
-        				System.out.println("\nQue bom que você reconsiderou!");
-        				System.out.println("Essa é uma hora importante, analise bem as opções e faça a sua escolha. Lembrando que ela afetará em cada desafio!");
-            			System.out.println("Opção 1 = Força: 2, Inteligência: 3, Lógica: 3");
-            			System.out.println("Opção 2 = Força: 0, Inteligência: 4, Lógica: 3");
-            			System.out.println("Opção 3 = Força: 4, Inteligência: 1, Lógica: 2");
-            			System.out.println("Escolha sua opção:");
-            			int caract = entrada.nextInt();
-        			}else {
-        				System.out.println("Opção inválida!");
-        			}
-        			
+        		}	
         		}
-        	}else if(escolha == 2) {
-        		System.out.println("\nOk, eu entendo que você quer jogar logo. Mas precisamos escolher suas características antes!");
-				System.out.println("Essa é uma hora importante, analise bem as opções e faça a sua escolha. Lembrando que ela afetará em cada desafio!");
-    			System.out.println("Opção 1 = Força: 2, Inteligência: 3, Lógica: 3");
-    			System.out.println("Opção 2 = Força: 0, Inteligência: 4, Lógica: 3");
-    			System.out.println("Opção 3 = Força: 4, Inteligência: 1, Lógica: 2");
-    			System.out.println("Escolha sua opção:");
-    			int caract = entrada.nextInt();
-        	} else {
-        		System.out.println("Opção inválida!!");
-        	}
+        	
         }while(escolha!=1 && escolha!=2);
-        //Daimon
+       
 	}
 	public static void main(String[] args) {
 		menu ();
