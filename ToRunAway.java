@@ -705,6 +705,7 @@ public class ToRunAway {
 	}while(!acertou);
 	
 	int[] vetor = new int[5];
+	int[] vetorCorreto = {2, 6, 11, 16, 18};
 	
 	System.out.println("Muito bem, o sistema de iluminação foi desativado e as portas estão destravadas! Agora só falta despistar os seguranças..\n"
 			+ "Para isso você precisará ativar o alarme de incêndio. Dessa maneira haverá tumulto, e será sua oportunidade de escapar sem sem visto!\n"
@@ -720,11 +721,28 @@ public class ToRunAway {
 			+ "4 - 18 positivo; \n");
         vetor[0]= entrada.nextInt();
         System.out.println("Questão 2: \n"
-    			+ "desenvolver questão"
-    			+ "5 - ; \n"
-    			+ "6 - ; \n"
-    			+ "7 - ; \n"
-    			+ "8 - ; \n");
+    			+ "Usando o laço WHILE, qual opção abaixo corresponde ao enunciado: Faça um programa que mostre todos os números inteiros de 1 a 50.\n"
+    			+ "5 - int i = 1;\n" + 
+    			"    	while( i = 50) {\n" + 
+    			"    	System.out.println(\"Inteiro \" + i );\n" + 
+    			"    	i = i + 1;\n" + 
+    			"    	}; \n\n"
+    			+ "6 - int i = 1;\n" + //RESPOSTA CORRETA
+    			"		while( i <= 50) {\n" + 
+    			"		System.out.println(\"Inteiro \" + i );\n" + 
+    			"		i = i + 1;\n" + 
+    			"	    }; \n\n"
+    			+ "7 - int i = 1;\n" + 
+    			"    	while( i >= 50) {\n" + 
+    			"    	System.out.println(\"Inteiro \" + i );\n" + 
+    			"    	i = i + 1;\n" + 
+    			"    	}; \n\n"
+    			+ "8 - int i = 1;\n" + 
+    			"    	while( i <= 50) {\n" + 
+    			"    	System.out.println(\"Inteiro \" + i );\n" + 
+    			"    	i = i - 1;\n" + 
+    			"    	}; \n\n"
+    			+ "Qual a opção correta? \n");
             vetor[1]= entrada.nextInt();
             System.out.println("Questão 3: \n"
         			+ "Considerando os valores já informados, qual seria o retorno da operação a seguir: A + C - B / D \n"
@@ -734,21 +752,59 @@ public class ToRunAway {
         			+ "12 - 1 positivo; \n");
                 vetor[2]= entrada.nextInt();
                 System.out.println("Questão 4: \n"
-            			+ "desenvolver questão"
-            			+ "13 - ; \n"
-            			+ "14 - ; \n"
-            			+ "15 - ; \n"
-            			+ "16 - ; \n");
+            			+ "Qual dos programas abaixo gera a seguinte série: 10, 20, 30, 40, ..., até 1000 utilizando o laço FOR."
+            			+ "13 - int i;\n" + 
+            			"        for(i = 10; i = 1000; i = i + 10){\n" + 
+            			"            System.out.println(\"Sequencia\" + i);\n" + 
+            			"            }; \n\n"
+            			+ "14 - int i;\n" + 
+            			"        for(i = 10; i >= 1000; i = i++){\n" + 
+            			"            System.out.println(\"Sequencia\" + i);\n" + 
+            			"            }; \n\n"
+            			+ "15 - int i;\n" + 
+            			"        for(i = 10; i <= 1000; i = i++){\n" + 
+            			"            System.out.println(\"Sequencia\" + i);\n" + 
+            			"            }; \n\n"
+            			+ "16 - int i;\n" + // RESPOSTA CORRETA
+            			"        for(i = 10; i <= 1000; i = i + 10){\n" + 
+            			"            System.out.println(\"Sequencia\" + i);\n" + 
+            			"            }; \n\n");
                     vetor[3]= entrada.nextInt();
                     System.out.println("Questão 5: \n"
                 			+ "desenvolver questão"
-                			+ "17 - ; \n"
-                			+ "18 - ; \n"
-                			+ "19 - ; \n"
-                			+ "20 - ; \n");
+                			+ "17 - int i = 7;\n" + 
+                			"        while(i<200){\n" + 
+                			"            System.out.println(i + \" é múltiplo de 7\");\n" + 
+                			"            i = i * 7;\n" + 
+                			"        }; \n\n"
+                			+ "18 - int i = 7;\n" + //RESPOSTA CORRETA
+                			"        while(i<200){\n" + 
+                			"            System.out.println(i + \" é múltiplo de 7\");\n" + 
+                			"            i = i + 7;\n" + 
+                			"        }; \n\n"
+                			+ "19 - int i = 0;\n" + 
+                			"        while(i<=200){\n" + 
+                			"            System.out.println(i + \" é múltiplo de 7\");\n" + 
+                			"            i = i + 7;\n" + 
+                			"        }; \n\n"
+                			+ "20 - int i = 7;\n" + 
+                			"        while(i<=200){\n" + 
+                			"            System.out.println(i + \" é múltiplo de 7\");\n" + 
+                			"            i = i + 7;\n" + 
+                			"        }; \n\n");
                         vetor[4]= entrada.nextInt();
         
-}
+                        System.out.println("Suas respostas criaram o vetor: vetor[" + vetor[0] + ", " + vetor[1] + ", " + vetor[2] + ", " + vetor[3] + ", " + vetor[4] + "]." );
+                        
+                        if(vetor == vetorCorreto) {
+                        	System.out.println("Sistema de incêndio ativado. Seguranças foram distraídos e você escapou!!!");
+                        	
+                        }else {
+                        	System.out.println("SENHA ERRADA! Seguranças foram alarmados e você está preso(a)!!!");
+                        	
+                        }
+    }
+    
 	public static void main(String[] args) {
 		menu();
 		caracteristica();
