@@ -11,7 +11,22 @@ public class ToRunAway {
 		String nome, sexo;
 		// Menu
 		do {
-			System.out.println("TO RUN AWAY \n");
+			System.out.println("\t\t     TO RUN AWAY \n");
+					
+			System.out.println(
+					  "                         |\r\n"
+					+ "                     _|__|__|_\r\n"
+					+ "     ___________    _|  | |  |_    ___________\r\n"
+					+ "    (__IXIXIXIXI___|_|__|_|__|_|___IXIXIXIXI__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n");
 			System.out.println(
 					"Você esta preparado(a) para provar seu potencial e suas habilidades em um jogo totalmente diferenciado?");
 			System.out.println(
@@ -19,9 +34,10 @@ public class ToRunAway {
 			System.out.println("Você topa esse desafio?");
 			System.out.println(" Opções \n");
 			System.out.println("1 - Jogar");
-			System.out.println("2 - Creditos");
-			System.out.println("3 - Sair \n");
+			System.out.println("2 - Creditos"); 
+			System.out.println("3 - Sair \n");	
 			System.out.print("Digite a sua escolha, você será um jogador ou desistirá sem tentar? \n");
+			
 			opcao = entrada.nextInt();
 			switch (opcao) {
 			case 1:
@@ -431,6 +447,7 @@ public class ToRunAway {
 				}
 			}
 		}
+		System.out.println("");
 	}
 
 	static void andar4() {
