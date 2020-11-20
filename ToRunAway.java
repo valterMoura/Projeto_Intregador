@@ -576,7 +576,13 @@ public class ToRunAway {
 
 		System.out.println(
 				"Ok, agora que você sabe que só conseguirá ter acesso ao próximo andar pelo elevador, pode tentar acessar ao mesmo.Corre!!!\n");
-		// incluir desenhos de caminhada
+		System.out.println("\n"
+			 	+"________ o\n" + 
+				"    ___  </v\n" + 
+				"   ___   -\\\n" + 
+				"          /\n");
+		          // desenho do personagem correndo
+
 		System.out
 				.println("Ok, você chegou ao elevador! Para abrir a porta, você precisa responder a questão abaixo:\n");
 
