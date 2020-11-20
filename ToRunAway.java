@@ -1,4 +1,7 @@
+package Projeto_Intregador;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
@@ -143,8 +146,7 @@ public class ToRunAway {
 		int numero1 = 9, numero2 = 6, numero3 = 5, tentativas = 5;
 		System.out.println(" Olá " + nome + "!!");
 		System.out.println("Seja bem vindo ao jogo!!!\n");
-		System.out.println("Seu celular toca: **Prinnn**, nova mensagem recebida! \n");// sugestao de tentativa de
-																						// inclusao de som
+		System.out.println("Seu celular toca: **Prinnn**, nova mensagem recebida! \n");
 		System.out.println("Mensagem: SISTEMA DE SEGURANÇA ATIVADO! Por medida de segurança, permaneça onde está!\n ");
 		System.out.println(
 				" A TI Universal encontrou provas contra você e bloqueou toda a empresa com o objetivo de te capturar. \n"
@@ -458,7 +460,7 @@ public class ToRunAway {
 	static void andar4() {
 		int quarto;
 		double caract = Math.random()*3;
-	System.out.println("Muito bem! Você chegou ao 4º andar!");
+	System.out.println("Você está surpreendendo,  já está no 4º andar!");
 	
 	do{
 	System.out.println("Agora, para você chegar ao 3º andar precisará descobrir em qual das salas está a passagem dos dutos de ar. Existe em somente uma das 4 salas do andar. \n"
@@ -498,7 +500,7 @@ public class ToRunAway {
 		System.out.println("Qual a opção correta? ");
 		int resposta = entrada.nextInt();
 		if(resposta == 1) {
-			System.out.println("Muito bem! Você conseguiu acesso ao duto, entre que você irá para o 3º andar!!");
+			System.out.println("Se continuar assim, logo você estará no térreo!! Você conseguiu acesso ao duto, entre que você irá para o 3º andar!!");
 		} else {
 			System.out.println("Resposta errada! GAME OVER!");
 		}
@@ -521,7 +523,7 @@ public class ToRunAway {
 		System.out.println("Qual a opção correta? ");
 		int resposta = entrada.nextInt();
 		if(resposta == 1) {
-			System.out.println("Muito bem! Você conseguiu acesso ao duto, entre que você irá para o 3º andar!!");
+			System.out.println("Se continuar assim, logo você estará no térreo!! Você conseguiu acesso ao duto, entre que você irá para o 3º andar!!");
 		} else {
 			System.out.println("Resposta errada! GAME OVER!");
 		}
@@ -546,7 +548,7 @@ public class ToRunAway {
 		System.out.println("Qual a opção correta? ");
 		int resposta = entrada.nextInt();
 		if(resposta == 1) {
-			System.out.println("Muito bem! Você conseguiu acesso ao duto, entre que você irá para o 3º andar!!");
+			System.out.println("Se continuar assim, logo você estará no térreo!! Você conseguiu acesso ao duto, entre que você irá para o 3º andar!!");
 		} else {
 			System.out.println("Resposta errada! GAME OVER!");
 		}
@@ -555,11 +557,11 @@ public class ToRunAway {
 
 	static void andar5(int caract) {
 		int quinto;		
-		System.out.println("Muito bem! Você chegou ao 5º andar!");
+		System.out.println("Eu não achava que seria possível, mas você chegou ao 5º andar!");
 
 		do {
 			System.out.println(
-					"Para descer mais um andar você precisa decidir qual sentido pegar. Essa sala só possui uma saída, então é inevitável \n"
+					"Agora, para descer mais um andar você precisa decidir qual sentido pegar. Essa sala só possui uma saída, então é inevitável \n"
 							+ "você passar pelo corredor. Porém, se você sair da sala e ir para a direita você terá a opção da escada, e do elevador. E se você ir para a esquerda você \n"
 							+ "terá acesso a outras duas salas. A sala A te dá acesso ao duto de ar condicionado, que você não sabe com qual sala faz ligação. E a sala B é integrada com o \n"
 							+ "andar de baixo na sala de descanso dos seguranças. Só um te permitirá avançar.. E ai, qual dessas opções você escolhe? \n"
@@ -598,7 +600,7 @@ public class ToRunAway {
 			System.out.println("Qual a opção correta? ");
 			int resposta = entrada.nextInt();
 			if (resposta == 2) {
-				System.out.println("Muito bem! Você abriu a porta do elevador, entre que você irá para o 4º andar!!");
+				System.out.println("Você está com muita sorte hein? Você abriu a porta do elevador, entre que você irá para o 4º andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
 			}
@@ -619,7 +621,7 @@ public class ToRunAway {
 			System.out.println("Qual a opção correta? ");
 			int resposta = entrada.nextInt();
 			if (resposta == 2) {
-				System.out.println("Muito bem! Você abriu a porta do elevador, entre que você irá para o 4º andar!!");
+				System.out.println("Você está com muita sorte hein? Você abriu a porta do elevador, entre que você irá para o 4º andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
 			}
@@ -640,7 +642,7 @@ public class ToRunAway {
 			System.out.println("Qual a opção correta? ");
 			int resposta = entrada.nextInt();
 			if (resposta == 2) {
-				System.out.println("Muito bem! Você abriu a porta do elevador, entre que você irá para o 4º andar!!");
+				System.out.println("Você está com muita sorte hein? Você abriu a porta do elevador, entre que você irá para o 4º andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
 			}
@@ -651,7 +653,7 @@ public class ToRunAway {
 		int terreo;
 		
 		
-	System.out.println("Muito bem! Agora você ja está no TERREO!\n"
+	System.out.println("Até agora foi sorte.. Agora quero ver você sair dessa!! Você chegou no TERREO!\n"
 			+ "Mas o jogo ainda não acabou! Esse é o andar mais protegido pelos seguranças, e sair daqui não será tão fácil!!\n"
 			+ "Em todas as saídas há dois seguranças que não deixam ninguém sair até você ser capturado, e todas as pessoas estão sendo vistoriadas.\n"
 			+ "Para conseguir sair do prédio, você precisará despistar os seguranças e abrir as portas que estão travadas! E aí? Já sabe como fazer isso?\n");
@@ -661,7 +663,7 @@ public class ToRunAway {
 	terreo = entrada.nextInt();
 	
 	if(terreo == 1) {
-		System.out.println("Muito bem, deixa eu te explicar! ");
+		System.out.println("Ok, deixa eu te explicar! ");
 	}
 	
 	ArrayList<String> alternativas = new ArrayList<String>();
@@ -733,7 +735,7 @@ public class ToRunAway {
 	int[] vetor = new int[5];
 	int[] vetorCorreto = {2, 6, 11, 16, 18};
 	
-	System.out.println("Muito bem, o sistema de iluminação foi desativado e as portas estão destravadas! Agora só falta despistar os seguranças..\n"
+	System.out.println("Mais um ponto para você, o sistema de iluminação foi desativado e as portas estão destravadas! Agora só falta despistar os seguranças..\n"
 			+ "Para isso você precisará ativar o alarme de incêndio. Dessa maneira haverá tumulto, e será sua oportunidade de escapar sem sem visto!\n"
 			+ "O sistema de incêndio será ativado assim que você completar o código abaixo conforme as instruções. \n\n");
 	System.out.println("Considere os seguintes valores para as variáveis. A = 10; B = 12; C = -2; D = 6; Agora responda as questões a seguir. Todas as \n"
@@ -822,7 +824,7 @@ public class ToRunAway {
         
                         System.out.println("Suas respostas criaram o vetor: vetor[" + vetor[0] + ", " + vetor[1] + ", " + vetor[2] + ", " + vetor[3] + ", " + vetor[4] + "]." );
                         
-                        if(vetor == vetorCorreto) {
+                        if(Arrays.equals(vetor, vetorCorreto)) {
                         	System.out.println("Sistema de incêndio ativado. Seguranças foram distraídos e você escapou!!!\n"
                         			+ "Parabéns! Você conseguiu provar suas habilidades!!! Agora é só comemorar!! \n\n"
                         			+ "   .* *.               `o`o`\r\n" + 
