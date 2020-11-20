@@ -752,7 +752,7 @@ public class ToRunAway {
         			+ "12 - 1 positivo; \n");
                 vetor[2]= entrada.nextInt();
                 System.out.println("Questão 4: \n"
-            			+ "Qual dos programas abaixo gera a seguinte série: 10, 20, 30, 40, ..., até 1000 utilizando o laço FOR."
+            			+ "Qual dos programas abaixo gera a seguinte série: 10, 20, 30, 40, ..., até 1000 utilizando o laço FOR.\n"
             			+ "13 - int i;\n" + 
             			"        for(i = 10; i = 1000; i = i + 10){\n" + 
             			"            System.out.println(\"Sequencia\" + i);\n" + 
@@ -771,7 +771,7 @@ public class ToRunAway {
             			"            }; \n\n");
                     vetor[3]= entrada.nextInt();
                     System.out.println("Questão 5: \n"
-                			+ "desenvolver questão"
+                			+ "Qual dos programas abaixo imprime todos os múltiplos de 7 menores que 200 utilizando o laço WHILE?\n"
                 			+ "17 - int i = 7;\n" + 
                 			"        while(i<200){\n" + 
                 			"            System.out.println(i + \" é múltiplo de 7\");\n" + 
