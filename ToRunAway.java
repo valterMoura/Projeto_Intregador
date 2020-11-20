@@ -797,10 +797,39 @@ public class ToRunAway {
                         System.out.println("Suas respostas criaram o vetor: vetor[" + vetor[0] + ", " + vetor[1] + ", " + vetor[2] + ", " + vetor[3] + ", " + vetor[4] + "]." );
                         
                         if(vetor == vetorCorreto) {
-                        	System.out.println("Sistema de incêndio ativado. Seguranças foram distraídos e você escapou!!!");
+                        	System.out.println("Sistema de incêndio ativado. Seguranças foram distraídos e você escapou!!!\n"
+                        			+ "Parabéns! Você conseguiu provar suas habilidades!!! Agora é só comemorar!! \n\n"
+                        			+ "   .* *.               `o`o`\r\n" + 
+                        			"         *. .*              o`o`o`o      ^,^,^\r\n" + 
+                        			"           * \\               `o`o`     ^,^,^,^,^\r\n" + 
+                        			"              \\     ***        |       ^,^,^,^,^\r\n" + 
+                        			"               \\   *****       |        /^,^,^\r\n" + 
+                        			"                \\   ***        |       /\r\n" + 
+                        			"    ~@~*~@~      \\   \\         |      /\r\n" + 
+                        			"  ~*~@~*~@~*~     \\   \\        |     /\r\n" + 
+                        			"  ~*~@smd@~*~      \\   \\       |    /     #$#$#        .`'.;.\r\n" + 
+                        			"  ~*~@~*~@~*~       \\   \\      |   /     #$#$#$#   00  .`,.',\r\n" + 
+                        			"    ~@~*~@~ \\        \\   \\     |  /      /#$#$#   /|||  `.,'\r\n" + 
+                        			"_____________\\________\\___\\____|_/______/_________|\\/\\___||______");
                         	
                         }else {
-                        	System.out.println("SENHA ERRADA! Seguranças foram alarmados e você está preso(a)!!!");
+                        	System.out.println("SENHA ERRADA! Seguranças foram alarmados e você está preso(a)!!!\n\n"
+                        			+ "MM'\"\"\"\"\"`MM                              \r\n" + 
+                        			"M' .mmm. `M                              \r\n" + 
+                        			"M  MMMMMMMM .d8888b. 88d8b.d8b. .d8888b. \r\n" + 
+                        			"M  MMM   `M 88'  `88 88'`88'`88 88ooood8 \r\n" + 
+                        			"M. `MMM' .M 88.  .88 88  88  88 88.  ... \r\n" + 
+                        			"MM.     .MM `88888P8 dP  dP  dP `88888P' \r\n" + 
+                        			"MMMMMMMMMMM                              \r\n" + 
+                        			"                                         \r\n" + 
+                        			"MMP\"\"\"\"\"YMM                            dP \r\n" + 
+                        			"M' .mmm. `M                            88 \r\n" + 
+                        			"M  MMMMM  M dP   .dP .d8888b. 88d888b. 88 \r\n" + 
+                        			"M  MMMMM  M 88   d8' 88ooood8 88'  `88 dP \r\n" + 
+                        			"M. `MMM' .M 88 .88'  88.  ... 88          \r\n" + 
+                        			"MMb     dMM 8888P'   `88888P' dP       oo \r\n" + 
+                        			"MMMMMMMMMMM                               \r\n" + 
+                        			"                                          ");
                         	
                         }
     }
