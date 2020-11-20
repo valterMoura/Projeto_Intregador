@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class ToRunAway {
 	static Scanner entrada = new Scanner(System.in);
 
-	static void menu() {
+	static String menu() {
 		// variaveis.
 		int opcao;
-		String nome, sexo;
+		String nome="", sexo;
 		// Menu
 		do {
 			System.out.println("\t\t     TO RUN AWAY \n");
@@ -44,6 +44,7 @@ public class ToRunAway {
 				System.out.println(
 						"\nGostei de ver, temos alguém disposto a enfrentar desafios pelo visto. Como devo chamar a pessoa que ganhará o jogo? (ou não!) ");
 				nome = entrada.next();
+				
 				System.out.print(
 						"\nÓtimo. Para completar essa etapa só temos mais uma perguntinha.. Qual o seu gênero? ");
 				System.out.println("M => Masculino  F => Feminino");
@@ -77,6 +78,7 @@ public class ToRunAway {
 							+ "e para a " + nome
 							+ " fugir, terá que hackear o sistema de segurança e fugir de todos os \nseguranças da empresa, que estão localizados em pontos estratégios para que ninguém saia sem ser visto.\n");
 				}
+				
 				break;
 
 			case 2:
@@ -97,10 +99,12 @@ public class ToRunAway {
 				System.out.println("Opção inválida, renda-se e venha testar suas habilidades de jogador!");
 			}
 		} while (opcao == 3 || opcao == 2);
+		return nome;
 	}
 
-	static void caracteristica() {
+	static int caracteristica() {
 		int escolha;
+		int caract =0;
 
 		do {
 			System.out.println("1 - Conte-me mais sobre o que vou vivenciar, por favor!!");
@@ -121,20 +125,21 @@ public class ToRunAway {
 				if (perfil == 1) {
 					System.out.println(
 							"\nEssa é uma hora importante, analise bem as opções e faça a sua escolha. Lembrando que ela afetará em cada desafio!");
-					System.out.println("Opção 1 = Força: 2, Inteligência: 3, Lógica: 3");
-					System.out.println("Opção 2 = Força: 0, Inteligência: 4, Lógica: 3");
-					System.out.println("Opção 3 = Força: 4, Inteligência: 1, Lógica: 2");
+					System.out.println("Opção 1 = Força: 1, Inteligência: 2, Lógica: 3");
+					System.out.println("Opção 2 = Força: 2, Inteligência: 3, Lógica: 1");
+					System.out.println("Opção 3 = Força: 3, Inteligência: 1, Lógica: 2");
 					System.out.println("Escolha sua opção:");
-					int caract = entrada.nextInt();
+					caract = entrada.nextInt();
 				}
 			}
 
 		} while (escolha != 1 && escolha != 2);
+		return caract;
 
 	}
 
-	static void andar9() {
-		String nome = "João";
+	static void andar9(String nome, int caract) {
+		
 		int numero1 = 9, numero2 = 6, numero3 = 5, tentativas = 5;
 		System.out.println(" Olá " + nome + "!!");
 		System.out.println("Seja bem vindo ao jogo!!!\n");
@@ -548,9 +553,8 @@ public class ToRunAway {
 		}
 	}
 
-	static void andar5() {
-		int quinto;
-		int caract = 3;
+	static void andar5(int caract) {
+		int quinto;		
 		System.out.println("Muito bem! Você chegou ao 5º andar!");
 
 		do {
@@ -643,9 +647,9 @@ public class ToRunAway {
 		}
 	}
 
-    static void terreo() {
+    static void terreo(String nome) {
 		int terreo;
-		String nome = "Joao";
+		
 		
 	System.out.println("Muito bem! Agora você ja está no TERREO!\n"
 			+ "Mas o jogo ainda não acabou! Esse é o andar mais protegido pelos seguranças, e sair daqui não será tão fácil!!\n"
@@ -857,12 +861,12 @@ public class ToRunAway {
     }
     
 	public static void main(String[] args) {
-		menu();
-		caracteristica();
-		andar9();
-		andar5();
+		String nome = menu();
+		int caract = caracteristica();
+		andar9(nome, caract);
+		andar5(caract);
 		andar4();
-		terreo();			
+		terreo(nome);			
 
 	}
 
