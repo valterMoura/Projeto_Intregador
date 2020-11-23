@@ -1,18 +1,28 @@
 package code;
 
-import java.util.Scanner;
-
-public class Andar2_e_Andar7 {
-	static Scanner entrada = new Scanner(System.in);
+public class Teste_Renato {
 
 	public static void main(String[] args) {
-		//andar2();
-		//andar7();
-
+	
+		System.out.println("Início do teste da função andar2");
+		System.out.println("============================================");
+		andar2();
+		System.out.println("============================================");
+		System.out.println("Término do teste da função andar2. Sem erros");
+		
+		System.out.print("\n\n");
+		
+		System.out.println("Início do teste da função andar7");
+		System.out.println("============================================");
+		andar7();
+		System.out.println("============================================");
+		System.out.println("Término do teste da função andar7. Sem erros");
+		System.out.println("--------------------------------------------");
+		System.out.println("Todos os testes foram concluídos sem erros.");
 	}
-
+	
 	static void andar2() {
-		int escolhas[] = new int[4];
+		int escolhas[] = {2,1,1,1};
 		// gabarito: 2, 1, 1 e Todas
 
 		// Chegada
@@ -35,7 +45,7 @@ public class Andar2_e_Andar7 {
 			System.out.println("2) Sequencial, decisão e repetição");
 			System.out.println("3) listas, pilhas e árvores  ");
 			System.out.println("Qual a sua escolha?(1, 2 ou 3): ");
-			escolhas[0] = entrada.nextInt();
+			//escolhas[0] = entrada.nextInt();
 
 			if (escolhas[0] == 1) {
 				System.out.println(
@@ -85,7 +95,7 @@ public class Andar2_e_Andar7 {
 			System.out.println("2) Dois do-while com a condição de número de cubículos.");
 			System.out.println("3) Um grande switch verificando ocupações.");
 			System.out.println("Qual a sua escolha?(1, 2 ou 3): ");
-			escolhas[1] = entrada.nextInt();
+			//escolhas[1] = entrada.nextInt();
 
 			if (escolhas[1] == 1) {
 				System.out.println(
@@ -144,7 +154,7 @@ public class Andar2_e_Andar7 {
 			System.out.println("2) i++");
 			System.out.println("3) i+=1");
 			System.out.println("Qual a sua escolha?(1, 2 ou 3): ");
-			escolhas[2] = entrada.nextInt();
+			//escolhas[2] = entrada.nextInt();
 
 			if (escolhas[2] == 1) {
 				System.out.println(
@@ -178,7 +188,7 @@ public class Andar2_e_Andar7 {
 			System.out.println("2) Elevador");
 			System.out.println("3) Escada de incêndio");
 			System.out.println("Qual a sua escolha?(1, 2 ou 3): ");
-			escolhas[3] = entrada.nextInt();
+			//escolhas[3] = entrada.nextInt();
 
 			if (escolhas[3] == 1) {
 				System.out.println("Ao se aproximar das escadas, você ouve passos. Você se encosta na parede entre a porta e o ");
@@ -202,7 +212,7 @@ public class Andar2_e_Andar7 {
 	}
 	
 	static void andar7() {
-		int escolhas[] = new int[3];
+		int escolhas[] = {3,3,2};
 		//gabarito: 3, 3, e 2
 		
 		// Chegada
@@ -221,7 +231,7 @@ public class Andar2_e_Andar7 {
 			System.out.println("2) Porta2 : for");
 			System.out.println("3) Porta3 : do-while'");
 			System.out.println("Qual a sua escolha?(1, 2 ou 3): ");
-			escolhas[0] = entrada.nextInt();
+			//escolhas[0] = entrada.nextInt();
 
 			if (escolhas[0] != 3)
 				System.out.println("Resposta errada, tente mais uma vez.");
@@ -237,7 +247,7 @@ public class Andar2_e_Andar7 {
 			System.out.println("2) Um armário ao lado da pia");
 			System.out.println("3) Em baixo de uma mesa com quatro cadeiras próxima a um canto da cozinha");
 			System.out.println("Qual a sua escolha?(1, 2 ou 3): ");
-			escolhas[1] = entrada.nextInt();
+			//escolhas[1] = entrada.nextInt();
 
 			if (escolhas[1] == 1) {
 				System.out.println(
@@ -274,7 +284,7 @@ public class Andar2_e_Andar7 {
 			System.out.println("2) default");
 			System.out.println("3) goto");
 			System.out.println("Qual a sua escolha?(1, 2 ou 3): ");
-			escolhas[2] = entrada.nextInt();
+			//escolhas[2] = entrada.nextInt();
 
 			if (escolhas[2] == 1)
 				System.out.println(
@@ -294,7 +304,6 @@ public class Andar2_e_Andar7 {
 		} while (escolhas[2] != 2);
 
 	}
-	
 	
 	
 }
