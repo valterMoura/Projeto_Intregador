@@ -11,8 +11,107 @@ public class Andar2_e_Andar7 {
 
 	}
 
+	static String menu() {
+		// variaveis.
+		int opcao;
+		String nome = "", sexo;
+		// Menu
+		do {
+			System.out.println("\t\t     TO RUN AWAY \n");
+
+			System.out.println("                         |\r\n" + "                     _|__|__|_\r\n"
+					+ "     ___________    _|  | |  |_    ___________\r\n"
+					+ "    (__IXIXIXIXI___|_|__|_|__|_|___IXIXIXIXI__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n"
+					+ "    (__|\"|\"|\"|\"| [=][=] [=] [=][=] |\"|\"|\"|\"|__)\r\n");
+			System.out.println(
+					"Você esta preparado(a) para provar seu potencial e suas habilidades em um jogo totalmente diferenciado?");
+			System.out.println(
+					"Apresentamos TO RUN AWAY! O jogo que faltava para você testar seus conhecimentos como programador.");
+			System.out.println("Você topa esse desafio?");
+			System.out.println(" Opções \n");
+			System.out.println("1 - Jogar");
+			System.out.println("2 - Creditos");
+			System.out.println("3 - Sair \n");
+			System.out.print("Digite a sua escolha, você será um jogador ou desistirá sem tentar? \n");
+
+			opcao = entrada.nextInt();
+			switch (opcao) {
+			case 1:
+				System.out.println(
+						"\nGostei de ver, temos alguém disposto a enfrentar desafios pelo visto. Como devo chamar a pessoa que ganhará o jogo? (ou não!) ");
+				nome = entrada.next();
+
+				System.out.print(
+						"\nÓtimo. Para completar essa etapa só temos mais uma perguntinha.. Qual o seu gênero? ");
+				System.out.println("M => Masculino  F => Feminino");
+				sexo = entrada.next();
+				if (sexo.equalsIgnoreCase("M")) {
+					System.out.println("\nÓtimo, agora vamos ao jogo!! Para iniciar, conheça sua história: \n");
+					System.out.println("Um jovem programador, chamado " + nome
+							+ " trabalha há pouco tempo na empresa TI Universal,"
+							+ " empresa que estava sofrendo roubo de informações sigilosas por \nhackers, " + nome
+							+ " por ser novato, foi utilizado como laranja pelos hackers."
+							+ " Os hackers, que também trabalhavam na mesma empresa, implantaram muitas \nprovas no usuário do sistema no qual "
+							+ nome + " trabalhava, sem que o mesmo soubesse.\n\n"
+							+ "A TI Universal contratou uma equipe de hackers para descobrir quem estava roubando essas informações da empresa e divulgando-as, ao descobrir as \nprovas implantadas no nome de "
+							+ nome
+							+ ", o presidente da empresa aciona a segurança para que localize e capture o jovem programador. \n\nNesse exato momento o sistema de segurança do predio é acionado para que "
+							+ "ele não fuja. O sistema de segurança, bloqueia os elevadores que só podem \ndescer um andar, portas e janela são trancadas automaticamente, "
+							+ "e para o " + nome
+							+ " fugir, terá que hackear o sistema de segurança e fugir de todos os \nseguranças da empresa, que estão localizados em pontos estratégios para que ninguém saia sem ser visto.\n");
+				} else if (sexo.equalsIgnoreCase("F")) {
+					System.out.println("\nÓtimo, agora vamos ao jogo!! Para iniciar, conheça sua história: \n");
+					System.out.println("Uma jovem programadora, chamada " + nome
+							+ " trabalha há pouco tempo na empresa TI Universal,"
+							+ " empresa que estava sofrendo roubo de informações sigilosas por \nhackers, " + nome
+							+ " por ser novata, foi utilizada como laranja pelos hackers."
+							+ " Os hackers, que também trabalhavam na mesma empresa, implantaram muitas \nprovas no usuário do sistema na qual "
+							+ nome + " trabalhava, sem que a mesma soubesse.\n\n"
+							+ "A TI Universal contratou uma equipe de hackers para descobrir quem estava roubando essas informações da empresa e divulgando-as, ao descobrir as \nprovas implantadas no nome de "
+							+ nome
+							+ ", o presidente da empresa aciona a segurança para que localize e capture a jovem programadora. \n\nNesse exato momento o sistema de segurança do predio é acionado para que "
+							+ "ela não fuja. O sistema de segurança, bloqueia os elevadores que só podem \ndescer um andar, portas e janela são trancadas automaticamente, "
+							+ "e para a " + nome
+							+ " fugir, terá que hackear o sistema de segurança e fugir de todos os \nseguranças da empresa, que estão localizados em pontos estratégios para que ninguém saia sem ser visto.\n");
+				}
+
+				break;
+
+			case 2:
+				System.out.println(" CREDITOS ");
+				System.out.println("Desenvolvedor: DAIMON DA SILVA");
+				System.out.println("Desenvolvedor: KATIA SCHVABE");
+				System.out.println("Desenvolvedor: VALTER DE MOURA PEREIRA");
+				System.out.println("Desenvolvedor: VICTOR RODRIGUES ROCHA");
+				System.out.println("Desenvolvedor: RENATO BERTONI LARDOSA SANTOS");
+				System.out.println("\n Opção");
+				System.out.print("2 - Voltar ");
+				opcao = entrada.nextInt();
+				break;
+			case 3:
+				System.out.println("\nVocê saiu do jogo!");
+				break;
+			default:
+				System.out.println("Opção inválida, renda-se e venha testar suas habilidades de jogador!");
+			}
+		} while (opcao == 3 || opcao == 2);
+		return nome;
+	}
+	
 	static void andar2() {
 		int escolhas[] = new int[4];
+		
+		// Possibilidade de Game Over no desafio 2
+		int tentativas = 5;
+		
 		// gabarito: 2, 1, 1 e Todas
 
 		// Chegada
@@ -97,17 +196,24 @@ public class Andar2_e_Andar7 {
 				System.out.println("do seu cubículo está livre. Ao segui por esse caminho, você é surpreendido por haver alguém ");
 				System.out.println("em um dos cubículos! Seu código produziu um resultado errado. A pessoa grita, o segurança ");
 				System.out.println("vê e detém você.");
+				System.out.println("Resposta errada.");
 			}
 			if (escolhas[1] == 3) {
 				System.out.println(
 						"O computador roda o código, mas mensagens de erro são exibidas. Você tenta corrir o código, mas nada ");
 				System.out.println("funciona. Após algumas tentativas, você perde noção do tempo e o segurança aparece atrás de");
 				System.out.println("você e detém você!");
+				System.out.println("Resposta errada.");
 			}
 
-			if (escolhas[1] != 1)
-				System.out.println("Resposta errada, tente mais uma vez.");
-
+			if (escolhas[1] != 1) {
+				tentativas--;
+			}
+			if (tentativas == 1) {
+				System.out.println("GAME OVER\n");
+				menu();
+			}
+				
 		} while (escolhas[1] != 1);
 		
 		
@@ -203,6 +309,10 @@ public class Andar2_e_Andar7 {
 	
 	static void andar7() {
 		int escolhas[] = new int[3];
+		
+		// Possibilidade de Game Over no desafio 3
+		int tentativas = 5;
+		
 		//gabarito: 3, 3, e 2
 		
 		// Chegada
@@ -268,7 +378,7 @@ public class Andar2_e_Andar7 {
 			System.out.println("do setor de segurança e está desocupada. Provavelmente é o posto do guarda que passou pela cozinha. ");
 			System.out.println(" Ao se aproximar da mesa, no monitor você observa que aparece uma mensagem"); 
 			System.out.println("'Para acessar o diagrama de utilização dos cubículos responda: ");
-			System.out.println("Em uma estrutura switch, qual declaração, que quando presente, é executada quando"
+			System.out.println("Em uma estrutura switch, qual declaração, que quando presente, é executada quando "
 					+ "nenhum dos casos ocorre?");
 			System.out.println("1) Break");
 			System.out.println("2) default");
@@ -276,20 +386,28 @@ public class Andar2_e_Andar7 {
 			System.out.println("Qual a sua escolha?(1, 2 ou 3): ");
 			escolhas[2] = entrada.nextInt();
 
-			if (escolhas[2] == 1)
+			if (escolhas[2] == 1) {
 				System.out.println(
 						"Esta resposta é uma das erradas, e ao reiniciar a pergunta o guarda volta e surpreende você.");
-			if (escolhas[2] == 2)
+			}
+			if (escolhas[2] == 2) {
 				System.out.println(
 						"Resposta certa. O diagrama aparece e você vê que os dois cubículos voltados para a parede ");
 				System.out.println("no caminho da janela estão desocupados, permitindo acesso. Você abre a janela e desce para ");
 				System.out.println("o 6o andar.");
-			if (escolhas[2] == 3)
+			}
+			if (escolhas[2] == 3) {
 				System.out.println(
 						"Esta resposta é uma das erradas, e ao reiniciar a pergunta o guarda volta e surpreende você.");
-
-			if (escolhas[2] != 2)
-				System.out.println("Resposta errada, tente mais uma vez.");
+			}
+			if (escolhas[1] != 1) {
+				tentativas--;
+			}
+			if (tentativas == 1) {
+				System.out.println("GAME OVER\n");
+				//menu();
+				return;
+			}
 
 		} while (escolhas[2] != 2);
 

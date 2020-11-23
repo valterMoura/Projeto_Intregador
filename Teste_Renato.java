@@ -1,12 +1,23 @@
 package code;
-
+import java.util.Scanner;
 public class Teste_Renato {
-
-	public static void main(String[] args) {
+	static Scanner entrada = new Scanner(System.in);
 	
+	public static void main(String[] args) {
+		testeNormal();
+		testeGameOverAndar2();
+		testeGameOverAndar7();
+		System.out.println("+++++++++++++++++++++++++++++++++++++++++++");
+		System.out.println("Todos os testes foram concluídos sem erros.");
+	}
+	
+	static void testeNormal() {
+		int escolhas2[] = {2,1,1,1};
+		int escolhas7[] = {3,3,2};
+		
 		System.out.println("Início do teste da função andar2");
 		System.out.println("============================================");
-		andar2();
+		andar2(escolhas2);
 		System.out.println("============================================");
 		System.out.println("Término do teste da função andar2. Sem erros");
 		
@@ -14,16 +25,43 @@ public class Teste_Renato {
 		
 		System.out.println("Início do teste da função andar7");
 		System.out.println("============================================");
-		andar7();
+		andar7(escolhas7);
 		System.out.println("============================================");
 		System.out.println("Término do teste da função andar7. Sem erros");
 		System.out.println("--------------------------------------------");
-		System.out.println("Todos os testes foram concluídos sem erros.");
+		System.out.println("Testes com respostar certas foram concluídos sem erros.");
 	}
 	
-	static void andar2() {
-		int escolhas[] = {2,1,1,1};
+	static void testeGameOverAndar2() {
+		
+		int escolhas2[] = {2,2,1,1};
+		
+		System.out.println("Início do teste da função andar2");
+		System.out.println("============================================");
+		andar2(escolhas2);
+		System.out.println("============================================");
+		System.out.println("Término do teste da função andar2 com Game Over. Sem erros");
+		
+	}
+	
+	static void testeGameOverAndar7() {
+		
+		int escolhas2[] = {3,3,1};
+		
+		System.out.println("Início do teste da função andar7");
+		System.out.println("============================================");
+		andar7(escolhas2);
+		System.out.println("============================================");
+		System.out.println("Término do teste da função andar7 com Game Over. Sem erros");
+		
+	}
+	
+	static void andar2(int[] escolhas) {
 		// gabarito: 2, 1, 1 e Todas
+		//int escolhas[] = {2,1,1,1};
+		
+		// Possibilidade de Game Over no desafio 2
+		int tentativas = 5;
 
 		// Chegada
 		System.out.println("Muito bem! Você chegou ao 2º andar!");
@@ -107,17 +145,25 @@ public class Teste_Renato {
 				System.out.println("do seu cubículo está livre. Ao segui por esse caminho, você é surpreendido por haver alguém ");
 				System.out.println("em um dos cubículos! Seu código produziu um resultado errado. A pessoa grita, o segurança ");
 				System.out.println("vê e detém você.");
+				System.out.println("Resposta errada.");
 			}
 			if (escolhas[1] == 3) {
 				System.out.println(
 						"O computador roda o código, mas mensagens de erro são exibidas. Você tenta corrir o código, mas nada ");
 				System.out.println("funciona. Após algumas tentativas, você perde noção do tempo e o segurança aparece atrás de");
 				System.out.println("você e detém você!");
+				System.out.println("Resposta errada.");
 			}
 
-			if (escolhas[1] != 1)
-				System.out.println("Resposta errada, tente mais uma vez.");
-
+			if (escolhas[1] != 1) {
+				tentativas--;
+			}
+			if (tentativas == 1) {
+				System.out.println("GAME OVER\n");
+				//menu();
+				return;
+			}
+				
 		} while (escolhas[1] != 1);
 		
 		
@@ -211,9 +257,12 @@ public class Teste_Renato {
 		
 	}
 	
-	static void andar7() {
-		int escolhas[] = {3,3,2};
+	static void andar7(int[] escolhas) {
 		//gabarito: 3, 3, e 2
+		//int escolhas[] = {3,3,2};
+		
+		// Possibilidade de Game Over no desafio 3
+		int tentativas = 5;
 		
 		// Chegada
 		System.out.println("Muito bem! Você chegou ao 7º andar!");
@@ -278,7 +327,7 @@ public class Teste_Renato {
 			System.out.println("do setor de segurança e está desocupada. Provavelmente é o posto do guarda que passou pela cozinha. ");
 			System.out.println(" Ao se aproximar da mesa, no monitor você observa que aparece uma mensagem"); 
 			System.out.println("'Para acessar o diagrama de utilização dos cubículos responda: ");
-			System.out.println("Em uma estrutura switch, qual declaração, que quando presente, é executada quando"
+			System.out.println("Em uma estrutura switch, qual declaração, que quando presente, é executada quando "
 					+ "nenhum dos casos ocorre?");
 			System.out.println("1) Break");
 			System.out.println("2) default");
@@ -286,24 +335,31 @@ public class Teste_Renato {
 			System.out.println("Qual a sua escolha?(1, 2 ou 3): ");
 			//escolhas[2] = entrada.nextInt();
 
-			if (escolhas[2] == 1)
+			if (escolhas[2] == 1) {
 				System.out.println(
 						"Esta resposta é uma das erradas, e ao reiniciar a pergunta o guarda volta e surpreende você.");
-			if (escolhas[2] == 2)
+			}
+			if (escolhas[2] == 2) {
 				System.out.println(
 						"Resposta certa. O diagrama aparece e você vê que os dois cubículos voltados para a parede ");
 				System.out.println("no caminho da janela estão desocupados, permitindo acesso. Você abre a janela e desce para ");
 				System.out.println("o 6o andar.");
-			if (escolhas[2] == 3)
+			}
+			if (escolhas[2] == 3) {
 				System.out.println(
 						"Esta resposta é uma das erradas, e ao reiniciar a pergunta o guarda volta e surpreende você.");
-
-			if (escolhas[2] != 2)
-				System.out.println("Resposta errada, tente mais uma vez.");
+			}
+			if (escolhas[1] != 1) {
+				tentativas--;
+			}
+			if (tentativas == 1) {
+				System.out.println("GAME OVER\n");
+				//menu();
+				return;
+			}
 
 		} while (escolhas[2] != 2);
 
 	}
-	
 	
 }
