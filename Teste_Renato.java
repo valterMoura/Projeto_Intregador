@@ -116,8 +116,8 @@ public class Teste_Renato {
 		System.out.println("O computador no qual você está é o ... .0.6. Com essas informações você monta duas matrizes.");
 		System.out.println("Em uma, o computador  ... .0.2 está para a sua direita, e na outra, ele está para sua frente.");
 		System.out.println("Na fila à sua frente, o caminho estaria livre. Na fila à sua direita não, além da mesa do segurança.");
-		System.out.println("Ao olhar de novo, você que na mesa do segurança não é um segurança sentado, mas alguem mexendo no ");
-		System.out.println("computador. Essa pessoa junta suas coisas, sai da mesa em diração à saída. Passa pelo seu cubículo ");
+		System.out.println("Ao olhar de novo, você que na mesa do segurança não é um segurança sentado, mas alguém mexendo no ");
+		System.out.println("computador. Essa pessoa junta suas coisas, sai da mesa em direção à saída. Passa pelo seu cubículo ");
 		System.out.println("sem lhe notar e entra no elevador.");
 		
 		
@@ -149,7 +149,7 @@ public class Teste_Renato {
 			}
 			if (escolhas[1] == 3) {
 				System.out.println(
-						"O computador roda o código, mas mensagens de erro são exibidas. Você tenta corrir o código, mas nada ");
+						"O computador roda o código, mas mensagens de erro são exibidas. Você tenta corrigir o código, mas nada ");
 				System.out.println("funciona. Após algumas tentativas, você perde noção do tempo e o segurança aparece atrás de");
 				System.out.println("você e detém você!");
 				System.out.println("Resposta errada.");
@@ -176,7 +176,7 @@ public class Teste_Renato {
 		System.out.println("Abaixado, você se desloca até a saída da área de cubículos. Porém, você é surpreendido, pois não há ");
 		System.out.println("passagem entre os dois cubículos por onde você passaria; há pilhas de caixas que não era visível ");
 		System.out.println("antes. E passar por cima seria algo notado.");
-		System.out.println("Os dois cubículos perto de você estão vagos. Você em um de decide usar suas habilidades para derubar ");
+		System.out.println("Os dois cubículos perto de você estão vagos. Você em um de decide usar suas habilidades para derrubar ");
 		System.out.println("a rede e tentar fazer algumas pessoas fazerem uma pausa e iram ao refeitório para um café.");
 		System.out.println("No computador você acessa o roteador novamente. Bloqueia todos e coloca uma senha.");
 		System.out.println("Logo algumas pessoas reclamam com o técnico que estava alí, sem que ele conseguisse resolver, pois o ");
@@ -243,7 +243,7 @@ public class Teste_Renato {
 			}
 			if (escolhas[3] == 2) {
 				System.out.println("Ao se aproximas do elevador, você vê que ele já estava descendo, e pode ter pessoas dentro. ");
-				System.out.println("Você fica entre o elevador e a janela, como se estivesse eperando e olhando o lado de fora. ");
+				System.out.println("Você fica entre o elevador e a janela, como se estivesse esperando e olhando o lado de fora. ");
 				System.out.println("Duas pessoas saem do elevador conversando e não percebem você. Você entra no elevador vazio e ");
 				System.out.println("desce para o 1o andar.");
 				
@@ -319,8 +319,8 @@ public class Teste_Renato {
 
 		// Desafio 3 (correta : 3)
 		do {
-			System.out.println("Ao sair da cozinha, você vê um salão com vários cubículos. Em alguns arece haver gente trabalhando, ");
-			System.out.println(" e bastante ocupados. Você deve manter-se depercebido.");
+			System.out.println("Ao sair da cozinha, você vê um salão com vários cubículos. Em alguns parece haver gente trabalhando, ");
+			System.out.println(" e bastante ocupados. Você deve manter-se dsepercebido.");
 			System.out.println("Duas das laterais desse salão são janelas. Algumas, próximas a uma parede, há um acesso à ");
 			System.out.println(" escada de emergência. Porém, para acessá-la, você teria que ser visto por alguns ocupantes ");
 			System.out.println(" dos cubículos. Você procura opções para evitar isso. Uma mesa fora dos cubículos, parece ser ");
