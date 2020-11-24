@@ -1,4 +1,4 @@
-package Projeto_Intregador;
+//package Projeto_Intregador;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -703,7 +703,7 @@ public class ToRunAway {
 				System.out.println("Muito bom!\n");
 				break;
 			}else {
-				System.out.println("Opção inválida!!\n");
+				System.out.println("OpÃ§Ã£o invÃ¡lida!!\n");
 				break;
 		} }while (quarto != 3);
 
@@ -1402,66 +1402,68 @@ public class ToRunAway {
 	}
 
 	static void andar6() {		
-		 
+
 		int respost;
 
 	System.out.println("Departamento de Recursos Humanos\n");
-    System.out.println("Estavamos aguardando você, sua presença aqui NÃO É BEM VINDA, por isso se prepare");
-    System.out.println ("Neste andar, nosso sistema de segurança, esta integrado ao sistema de combate a incêndio"
-    + "Para acessar o 5º andar tera que decidir entre os comandos de acesso, qual o correto.\n"
-    + "O sistema de combate a incêndio é dotado de Bombas de Vácuo que em caso de acionamento todo Oxigênio do andar será sequestrado.\n"
-    + "Você terá apenas uma chance para acertar a questão e não ficar sem oxigênio. Analise bem a questão e boa sorte! RSRS	\n"
-    + "Se o código escolhido estiver correto será disponibilizado, uma máscara conectada a um cilindro de oxigênio.\n"
+    System.out.println("Estavamos aguardando vocÃª, sua presenÃ§a aqui NÃƒO Ã‰ BEM VINDA, por isso se prepare");
+    System.out.println ("Neste andar, nosso sistema de seguranÃ§a, esta integrado ao sistema de combate a incÃªndio"
+    + "Para acessar o 5Âº andar tera que decidir entre os comandos de acesso, qual o correto.\n"
+    + "O sistema de combate a incÃªndio Ã© dotado de Bombas de VÃ¡cuo que em caso de acionamento todo OxigÃªnio do andar serÃ¡ sequestrado.\n"
+    + "VocÃª terÃ¡ apenas uma chance para acertar a questÃ£o e nÃ£o ficar sem oxigÃªnio. Analise bem a questÃ£o e boa sorte! RSRS	\n"
+    + "Se o cÃ³digo escolhido estiver correto serÃ¡ disponibilizado, uma mÃ¡scara conectada a um cilindro de oxigÃªnio.\n"
     + "Vamos ao que interessa? \n");
-    System.out.println("QUESTÃO: Escolha a função correta que some a idade do jogador + o número deste andar; o código sendo escolhido de forma correta o \n"
-    		+ "jogador terá acesso ao 5º andar, caso erre o oxigênio será sequestrado e você perderá o jogo! \n");
+    System.out.println("QUESTÃƒO: Escolha a funÃ§Ã£o correta que some a idade do jogador + o nÃºmero deste andar; o cÃ³digo sendo escolhido de forma correta o \n"
+    		+ "jogador terÃ¡ acesso ao 5Âº andar, caso erre o oxigÃªnio serÃ¡ sequestrado e vocÃª perderÃ¡ o jogo! \n");
+
 
     
-    	// Comando 1
-    	do{System.out.println("De acordo com o enunciado, qual a opção correta? \n");
-        System.out.println("Opção 1: Public static void main(String args[]){\n"
-        		+ "int var1;\n"
-        		+ "int var2;\n"
-        		+ "var1 = 18;\n"
-        		+ "var2= 06;\n"
-        		+ "int resul = var1 + var2;\n"
-        		+ "System.out.println (resul);\n"); //resposta correta
-        System.out.println("Opção 2: Public static void main (String args[]){\n;"
-                + "int var1\n"
-                + "int var2\n"
-                + "var1 = 18\n"
-                + "var2= O6\n"
-                + "System.out.println (var1  + var2);\n");
-        System.out.println("Opção 3: Public static void main (String args[]){\n"
-                + "int var1\n"
-                + "int var2\n"
-                + "var1 = 18\n"
-                + "var2 = 06\n"
-                + "int resul = var1 + var2;\n"
-                + "Systen.out.printlm (resul)\n");
-        System.out.println("Opção 4: Public static void maim(String args[]){\n"
-        		+ "int var1\n"
-           		+ "int var2\n"
-        		+ "var1 = 18\n"
-           		+ "var2 = 06\n"
-           		+ "resul = var1 + var2;"
-        		+ "System.out.println (resul)\n");
-                // em caso de uma escolha invalida, o jogador perderá o jogo!.	   
-        System.out.println("Qual a opção correta?");
-        respost = entrada.nextInt();
-        
-        if(respost == 1) {
-        	System.out.println("Você escapou dessa, parabéns! Mas ainda não é sua salvação.. muito te espera.. siga para o 5 andar!");
-        }else if(respost == 2 || respost == 3 ||respost == 4) {
-        	System.out.println("OXIGÊNIO SEQUESTRADO.. GAME OVER!!");
-        	menu();
-        }else {
-        	System.out.println("Resposta inválida, preste atenção!");
+ // Comando 1
+	do{System.out.println("De acordo com o enunciado, qual a opÃ§Ã£o correta? \n");
+    System.out.println("OpÃ§Ã£o 1: Public static void main(String args[]){\n"
+    		+ "int var1;\n"
+    		+ "int var2;\n"
+    		+ "var1 = 18;\n"
+    		+ "var2= 06;\n"
+    		+ "int resul = var1 + var2;\n"
+    		+ "System.out.println (resul);\n"); //resposta correta
+    System.out.println("OpÃ§Ã£o 2: Public static void main (String args[]){\n;"
+            + "int var1\n"
+            + "int var2\n"
+            + "var1 = 18\n"
+            + "var2= O6\n"
+            + "System.out.println (var1  + var2);\n");
+    System.out.println("OpÃ§Ã£o 3: Public static void main (String args[]){\n"
+            + "int var1\n"
+            + "int var2\n"
+            + "var1 = 18\n"
+            + "var2 = 06\n"
+            + "int resul = var1 + var2;\n"
+            + "Systen.out.printlm (resul)\n");
+    System.out.println("OpÃ§Ã£o 4: Public static void maim(String args[]){\n"
+    		+ "int var1\n"
+       		+ "int var2\n"
+    		+ "var1 = 18\n"
+       		+ "var2 = 06\n"
+       		+ "resul = var1 + var2;"
+    		+ "System.out.println (resul)\n");
+            // em caso de uma escolha invalida, o jogador perderÃ¡ o jogo!.	   
+    System.out.println("Qual a opÃ§Ã£o correta?");
+    respost = entrada.nextInt();
 
-        }
-       
-    	}while(respost != 1 && respost == 2 && respost != 3 && respost != 4 );
-    }	
+    if(respost == 1) {
+    	System.out.println("VocÃª escapou dessa, parabÃ©ns! Mas ainda nÃ£o Ã© sua salvaÃ§Ã£o.. muito te espera.. siga para o 5 andar!");
+    }else if(respost == 2 || respost == 3 ||respost == 4) {
+    	System.out.println("OXIGÃŠNIO SEQUESTRADO.. GAME OVER!!");
+    	menu();
+    }else {
+    	System.out.println("Resposta invÃ¡lida, preste atenÃ§Ã£o!");
+
+    }
+
+	}while(respost != 1 && respost == 2 && respost != 3 && respost != 4 );
+}	
+	
  
 	public static void main(String[] args) {
 		String nome = menu();
