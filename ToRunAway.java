@@ -1,4 +1,4 @@
-//package Projeto_Intregador;
+package Projeto_Intregador;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -698,10 +698,16 @@ public class ToRunAway {
 			if (quarto == 1 || quarto == 2 || quarto == 4) {
 				System.out.println(
 						"Sala errada, tente outra.. Lembre que vocÃª estÃ¡ perdendo tempo. A qualquer momento um seguranÃ§a pode te encontrar!\n");
-			}
-		} while (quarto != 3);
+				break;
+			}else if (quarto == 3) {
+				System.out.println("Muito bom!\n");
+				break;
+			}else {
+				System.out.println("Opção inválida!!\n");
+				break;
+		} }while (quarto != 3);
 
-		System.out.println("Ok, agora que vocÃª encontrou o duto, preencha o algoritmo para liberar sua entrada!!\n");
+		System.out.println("Agora que vocÃª encontrou o duto, preencha o algoritmo para liberar sua entrada!!\n");
 
 		if (Math.ceil(caract) == 1) {
 			// desafio 1
@@ -720,6 +726,7 @@ public class ToRunAway {
 						"Se continuar assim, logo vocÃª estarÃ¡ no tÃ©rreo!! VocÃª conseguiu acesso ao duto, entre que vocÃª irÃ¡ para o 3Âº andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
+				menu();
 			}
 		} else if (Math.ceil(caract) == 2) {
 			// desafio 2
@@ -739,6 +746,7 @@ public class ToRunAway {
 						"Se continuar assim, logo vocÃª estarÃ¡ no tÃ©rreo!! VocÃª conseguiu acesso ao duto, entre que vocÃª irÃ¡ para o 3Âº andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
+				menu();
 			}
 		} else {
 			// desafio 3
@@ -757,10 +765,11 @@ public class ToRunAway {
 						"Se continuar assim, logo vocÃª estarÃ¡ no tÃ©rreo!! VocÃª conseguiu acesso ao duto, entre que vocÃª irÃ¡ para o 3Âº andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
+				menu();
 			}
 		}
-	}
-
+		}
+			
 	static void andar5(int caract) {
 		int quinto;
 		System.out.println("Eu nÃ£o achava que seria possÃ­vel, mas vocÃª chegou ao 5Âº andar!");
@@ -812,6 +821,7 @@ public class ToRunAway {
 						"VocÃª estÃ¡ com muita sorte hein? VocÃª abriu a porta do elevador, entre que vocÃª irÃ¡ para o 4Âº andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
+				menu();
 			}
 		} else if (caract == 2) {
 			// desafio 2
@@ -834,6 +844,7 @@ public class ToRunAway {
 						"VocÃª estÃ¡ com muita sorte hein? VocÃª abriu a porta do elevador, entre que vocÃª irÃ¡ para o 4Âº andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
+				menu();
 			}
 		} else {
 			// desafio 3
@@ -856,6 +867,7 @@ public class ToRunAway {
 						"VocÃª estÃ¡ com muita sorte hein? VocÃª abriu a porta do elevador, entre que vocÃª irÃ¡ para o 4Âº andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
+				menu();
 			}
 		}
 	}
@@ -1032,6 +1044,7 @@ public class ToRunAway {
 					+ "M. `MMM' .M 88 .88'  88.  ... 88          \r\n"
 					+ "MMb     dMM 8888P'   `88888P' dP       oo \r\n"
 					+ "MMMMMMMMMMM                               \r\n" + "                                          ");
+			menu();
 
 		}
 	}
@@ -1388,12 +1401,75 @@ public class ToRunAway {
 
 	}
 
+	static void andar6() {		
+		 
+		int respost;
+
+	System.out.println("Departamento de Recursos Humanos\n");
+    System.out.println("Estavamos aguardando você, sua presença aqui NÃO É BEM VINDA, por isso se prepare");
+    System.out.println ("Neste andar, nosso sistema de segurança, esta integrado ao sistema de combate a incêndio"
+    + "Para acessar o 5º andar tera que decidir entre os comandos de acesso, qual o correto.\n"
+    + "O sistema de combate a incêndio é dotado de Bombas de Vácuo que em caso de acionamento todo Oxigênio do andar será sequestrado.\n"
+    + "Você terá apenas uma chance para acertar a questão e não ficar sem oxigênio. Analise bem a questão e boa sorte! RSRS	\n"
+    + "Se o código escolhido estiver correto será disponibilizado, uma máscara conectada a um cilindro de oxigênio.\n"
+    + "Vamos ao que interessa? \n");
+    System.out.println("QUESTÃO: Escolha a função correta que some a idade do jogador + o número deste andar; o código sendo escolhido de forma correta o \n"
+    		+ "jogador terá acesso ao 5º andar, caso erre o oxigênio será sequestrado e você perderá o jogo! \n");
+
+    
+    	// Comando 1
+    	do{System.out.println("De acordo com o enunciado, qual a opção correta? \n");
+        System.out.println("Opção 1: Public static void main(String args[]){\n"
+        		+ "int var1;\n"
+        		+ "int var2;\n"
+        		+ "var1 = 18;\n"
+        		+ "var2= 06;\n"
+        		+ "int resul = var1 + var2;\n"
+        		+ "System.out.println (resul);\n"); //resposta correta
+        System.out.println("Opção 2: Public static void main (String args[]){\n;"
+                + "int var1\n"
+                + "int var2\n"
+                + "var1 = 18\n"
+                + "var2= O6\n"
+                + "System.out.println (var1  + var2);\n");
+        System.out.println("Opção 3: Public static void main (String args[]){\n"
+                + "int var1\n"
+                + "int var2\n"
+                + "var1 = 18\n"
+                + "var2 = 06\n"
+                + "int resul = var1 + var2;\n"
+                + "Systen.out.printlm (resul)\n");
+        System.out.println("Opção 4: Public static void maim(String args[]){\n"
+        		+ "int var1\n"
+           		+ "int var2\n"
+        		+ "var1 = 18\n"
+           		+ "var2 = 06\n"
+           		+ "resul = var1 + var2;"
+        		+ "System.out.println (resul)\n");
+                // em caso de uma escolha invalida, o jogador perderá o jogo!.	   
+        System.out.println("Qual a opção correta?");
+        respost = entrada.nextInt();
+        
+        if(respost == 1) {
+        	System.out.println("Você escapou dessa, parabéns! Mas ainda não é sua salvação.. muito te espera.. siga para o 5 andar!");
+        }else if(respost == 2 || respost == 3 ||respost == 4) {
+        	System.out.println("OXIGÊNIO SEQUESTRADO.. GAME OVER!!");
+        	menu();
+        }else {
+        	System.out.println("Resposta inválida, preste atenção!");
+
+        }
+       
+    	}while(respost != 1 && respost == 2 && respost != 3 && respost != 4 );
+    }	
+ 
 	public static void main(String[] args) {
 		String nome = menu();
 		int caract = caracteristica();
 		andar9(nome, caract);
 		andar8(caract);
 		andar7();
+		andar6();
 		andar5(caract);
 		andar4();
 		andar3(caract);
