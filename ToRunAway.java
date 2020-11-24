@@ -1,4 +1,4 @@
-package Projeto_Intregador;
+//package Projeto_Intregador;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -45,23 +45,23 @@ public class ToRunAway {
 				System.out.println(
 						"\nGostei de ver, temos alguém disposto a enfrentar desafios pelo visto. Como devo chamar a pessoa que ganhará o jogo? (ou não!) ");
 				nome = entrada.next();
-				
+
 				boolean sex = true;
 				do {
-				System.out.print(
-						"\nÓtimo. Para completar essa etapa só temos mais uma perguntinha.. Qual o seu gênero? ");
-				System.out.println("M => Masculino  F => Feminino");
-				sexo = entrada.next();
-				
-				if(sexo.equalsIgnoreCase("M") || sexo.equalsIgnoreCase("F")) {
-					System.out.println("Ok, entendido!");
-					sex = true;
-				}else {
-					System.out.println("Resposta inválida! Verifique.. ");
-					sex = false;
-				}
-				}while(sex != true);
-					
+					System.out.print(
+							"\nÓtimo. Para completar essa etapa só temos mais uma perguntinha.. Qual o seu gênero? ");
+					System.out.println("M => Masculino  F => Feminino");
+					sexo = entrada.next();
+
+					if (sexo.equalsIgnoreCase("M") || sexo.equalsIgnoreCase("F")) {
+						System.out.println("Ok, entendido!");
+						sex = true;
+					} else {
+						System.out.println("Resposta inválida! Verifique.. ");
+						sex = false;
+					}
+				} while (sex != true);
+
 				if (sexo.equalsIgnoreCase("M")) {
 					System.out.println("\nÓtimo, agora vamos ao jogo!! Para iniciar, conheça sua história: \n");
 					System.out.println("Um jovem programador, chamado " + nome
@@ -166,8 +166,8 @@ public class ToRunAway {
 	}
 
 	static void andar9(String nome, int caract) {
-
-		int numero1 = 9, numero2 = 6, numero3 = 5, tentativas = 5;
+		// int reload=1;
+		int numero1, numero2, numero3, tentativas = 5;
 		System.out.println(" Olá " + nome + "!!");
 		System.out.println("Seja bem vindo ao jogo!!!\n");
 		System.out.println("Seu celular toca: **Prinnn**, nova mensagem recebida! \n");
@@ -177,43 +177,128 @@ public class ToRunAway {
 						+ "Você está preso na sala de comando, e a única maneira de sair da sala é hackeando o sistema de segurança. \n"
 						+ "Desta maneira você irá desativar a trava das saídas disponíveis, e também desativar as câmeras para que ninguém te encontre!");
 
-		System.out.println(
-				"Para desativar o sistema de segurança, você precisará da senha de acesso.\nA mesma é composta por  "
-						+ " três digitos, e a soma dos três digito é igual a 20.\nsenha:__+__+__= 20\n"); // continuar
-																											// com
-																											// informações
-																											// da senha
-		do {
-			System.out.println("digite o primeiro digito");
-			numero1 = entrada.nextInt();
-			System.out.println("digite o segundo digito");
-			numero2 = entrada.nextInt();
-			System.out.println("digite o terceiro digito");
-			numero3 = entrada.nextInt();
-			if (numero1 == 9 && numero2 != 6 && numero3 != 5) {
-				System.out.println(" 9+__+__= 20");
-			} else if (numero1 == 9 && numero2 == 6 && numero3 != 5) {
-				System.out.println(" 9+ 6+__= 20\n");
-			} else if (numero1 == 9 && numero2 == 6 && numero3 == 5) {
-				System.out.println(" 9+ 6+ 5= 20\n");
-			} else if (numero1 == 9 && numero2 != 6 && numero3 != 5) {
-				System.out.println(" 9+__+__= 20\n");
-			} else if (numero1 != 9 && numero2 == 6 && numero3 != 5) {
-				System.out.println("__+ 6+__= 20\n");
-			} else if (numero1 != 9 && numero2 != 6 && numero3 == 5) {
-				System.out.println("__+__+ 5= 20\n");
-			} else if (numero1 != 9 && numero2 == 6 && numero3 == 5) {
-				System.out.println("__+ 6+ 5= 20\n");
-			} else {
-				System.out.println("__+__+__= 20\n");
-			}
-			tentativas--;
-			if (tentativas == 1) {
-				System.out.println("GAME OVER\n");
-				menu();
-			}
+		if (caract == 2) {
+			System.out.println(
+					"Para desativar o sistema de segurança, você precisará da senha de acesso.\nA mesma é composta por  "
+							+ " três digitos, e a soma dos três digito é igual a 20.\nsenha:__+__+__= 20\n"); // continuar
+																												// com
+																												// informações
+																												// da
+																												// senha
+			do {
+				if (tentativas == 0) {
+					System.out.println("GAME OVER\n");
+					fimdejogo();
+				}
+				System.out.println("digite o primeiro digito");
+				numero1 = entrada.nextInt();
+				System.out.println("digite o segundo digito");
+				numero2 = entrada.nextInt();
+				System.out.println("digite o terceiro digito");
+				numero3 = entrada.nextInt();
+				if (numero1 == 9 && numero2 != 6 && numero3 != 5) {
+					System.out.println(" 9+__+__= 20");
+				} else if (numero1 == 9 && numero2 == 6 && numero3 != 5) {
+					System.out.println(" 9+ 6+__= 20\n");
+				} else if (numero1 == 9 && numero2 == 6 && numero3 == 5) {
+					System.out.println(" 9+ 6+ 5= 20\n");
+				} else if (numero1 == 9 && numero2 != 6 && numero3 == 5) {
+					System.out.println(" 9+__+ 5= 20\n");
+				} else if (numero1 != 9 && numero2 == 6 && numero3 != 5) {
+					System.out.println("__+ 6+__= 20\n");
+				} else if (numero1 != 9 && numero2 != 6 && numero3 == 5) {
+					System.out.println("__+__+ 5= 20\n");
+				} else if (numero1 != 9 && numero2 == 6 && numero3 == 5) {
+					System.out.println("__+ 6+ 5= 20\n");
+				} else {
+					System.out.println("__+__+__= 20\n");
+				}
+				tentativas--;
+				
 
-		} while (numero1 != 9 || numero2 != 6 || numero3 != 5);
+			} while (numero1 != 9 || numero2 != 6 || numero3 != 5);
+		}else if(caract == 1) {
+			System.out.println(
+					"Para desativar o sistema de segurança, você precisará da senha de acesso.\nA mesma é composta por  "
+							+ " três digitos, e a soma dos três digito é igual a 10.\nsenha:__+__+__= 10\n"); // continuar
+																												// com
+																												// informações
+																												// da
+																												// senha
+			do {if (tentativas == 0) {
+					System.out.println("GAME OVER\n");
+					fimdejogo();
+				}
+				
+				System.out.println("digite o primeiro digito");
+				numero1 = entrada.nextInt();
+				System.out.println("digite o segundo digito");
+				numero2 = entrada.nextInt();
+				System.out.println("digite o terceiro digito");
+				numero3 = entrada.nextInt();
+				if (numero1 == 5 && numero2 != 3 && numero3 != 2) {
+					System.out.println(" 5+__+__= 10");
+				} else if (numero1 == 5 && numero2 == 3 && numero3 != 2) {
+					System.out.println(" 5+ 3+__= 10\n");
+				} else if (numero1 == 5 && numero2 == 3 && numero3 == 2) {
+					System.out.println(" 5+ 3+ 2= 10\n");
+				} else if (numero1 == 5 && numero2 != 3 && numero3 == 2) {
+					System.out.println(" 5+__+ 2= 10\n");
+				} else if (numero1 != 5 && numero2 == 3 && numero3 != 2) {
+					System.out.println("__+ 3+__= 10\n");
+				} else if (numero1 != 5 && numero2 != 3 && numero3 == 2) {
+					System.out.println("__+__+ 2= 10\n");
+				} else if (numero1 != 5 && numero2 == 3 && numero3 == 2) {
+					System.out.println("__+ 3+ 2= 10\n");
+				} else {
+					System.out.println("__+__+__= 10\n");
+				}
+				tentativas--;
+				
+
+			} while (numero1 != 5 || numero2 != 3 || numero3 != 2);
+			
+		}else {
+			System.out.println(
+					"Para desativar o sistema de segurança, você precisará da senha de acesso.\nA mesma é composta por  "
+							+ " três digitos, e a soma dos três digito é igual a 15.\nsenha:__+__+__= 15\n"); // continuar
+																												// com
+																												// informações
+																												// da
+																												// senha
+			do {if (tentativas == 0) {
+					System.out.println("GAME OVER\n");
+					fimdejogo();
+				}
+				System.out.println("digite o primeiro digito");
+				numero1 = entrada.nextInt();
+				System.out.println("digite o segundo digito");
+				numero2 = entrada.nextInt();
+				System.out.println("digite o terceiro digito");
+				numero3 = entrada.nextInt();
+				if (numero1 == 6 && numero2 != 5 && numero3 != 4) {
+					System.out.println(" 6+__+__= 15");
+				} else if (numero1 == 6 && numero2 == 5 && numero3 != 4) {
+					System.out.println(" 6+ 5+__= 15\n");
+				} else if (numero1 == 6 && numero2 == 5 && numero3 == 4) {
+					System.out.println(" 6+ 5+ 4= 15\n");
+				} else if (numero1 == 6 && numero2 != 5 && numero3 == 4) {
+					System.out.println(" 6+__+ 4= 15\n");
+				} else if (numero1 != 6 && numero2 == 5 && numero3 != 4) {
+					System.out.println("__+ 5+__= 15\n");
+				} else if (numero1 != 6 && numero2 != 5 && numero3 == 4) {
+					System.out.println("__+__+ 4= 15\n");
+				} else if (numero1 != 6 && numero2 == 5 && numero3 == 4) {
+					System.out.println("__+ 5+ 4= 15\n");
+				} else {
+					System.out.println("__+__+__= 15\n");
+				}
+				tentativas--;
+				
+
+			} while (numero1 != 6 || numero2 != 5 || numero3 != 4);
+			
+		}
 
 		int opcao = 0;
 
@@ -479,6 +564,7 @@ public class ToRunAway {
 			}
 		}
 		System.out.println("");
+		// return reload;
 	}
 
 	static void andar8(int caract) {
@@ -536,7 +622,7 @@ public class ToRunAway {
 			case 2:
 			case 3:
 				System.out.println("Resposta errada! GAME OVER!");
-				menu();
+				fimdejogo();
 			case 1:
 				System.out.println("Muito bem! Você acertou o desafio, entre que você irá para o 7º andar!");
 			}
@@ -556,7 +642,7 @@ public class ToRunAway {
 			case 1:
 			case 3:
 				System.out.println("Resposta errada! GAME OVER!");
-				menu();
+				fimdejogo();
 			case 2:
 				System.out.println("Muito bem! Você acertou o desafio, entre que você irá para o 7º andar!");
 			}
@@ -577,7 +663,7 @@ public class ToRunAway {
 			case 1:
 			case 3:
 				System.out.println("Resposta errada! GAME OVER!");
-				menu();
+				fimdejogo();
 			case 2:
 				System.out.println("Muito bem! Você acertou o desafio, entre que você irá para o 7º andar!");
 			}
@@ -640,7 +726,7 @@ public class ToRunAway {
 			case 2:
 			case 3:
 				System.out.println("Resposta errada! GAME OVER!");
-				break;
+				fimdejogo();
 			case 1:
 				System.out.println("Parabéns! Você acertou o desafio, entre que você irá para o 2º andar!");
 			}
@@ -662,7 +748,7 @@ public class ToRunAway {
 			case 2:
 			case 3:
 				System.out.println("Resposta errada! GAME OVER!");
-				break;
+				fimdejogo();
 			case 1:
 				System.out.println("Parabéns! Você acertou o desafio, entre que você irá para o 2º andar!");
 
@@ -686,7 +772,7 @@ public class ToRunAway {
 			case 1:
 			case 3:
 				System.out.println("Resposta errada! GAME OVER!");
-				break;
+				fimdejogo();
 			case 2:
 				System.out.println("Parábens! Você acertou o desafio, entre que você irá para o 2º andar!");
 			}
@@ -710,13 +796,13 @@ public class ToRunAway {
 			if (quarto == 1 || quarto == 2 || quarto == 4) {
 				System.out.println(
 						"Sala errada, tente outra.. Lembre que você está perdendo tempo. A qualquer momento um segurança pode te encontrar!\n");
-			}else if (quarto == 3) {
+			} else if (quarto == 3) {
 				System.out.println("Muito bom!\n");
-				break;
-			}else {
+
+			} else {
 				System.out.println("Opção inválida!!\n");
-				}
-			}while (quarto != 3);
+			}
+		} while (quarto != 3);
 
 		System.out.println("Agora que você encontrou o duto, preencha o algoritmo para liberar sua entrada!!\n");
 
@@ -737,7 +823,7 @@ public class ToRunAway {
 						"Se continuar assim, logo você estará no térreo!! Você conseguiu acesso ao duto, entre que você irá para o 3º andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
-				menu();
+				fimdejogo();
 			}
 		} else if (Math.ceil(caract) == 2) {
 			// desafio 2
@@ -757,7 +843,7 @@ public class ToRunAway {
 						"Se continuar assim, logo você estará no térreo!! Você conseguiu acesso ao duto, entre que você irá para o 3º andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
-				menu();
+				fimdejogo();
 			}
 		} else {
 			// desafio 3
@@ -776,11 +862,11 @@ public class ToRunAway {
 						"Se continuar assim, logo você estará no térreo!! Você conseguiu acesso ao duto, entre que você irá para o 3º andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
-				menu();
+				fimdejogo();
 			}
 		}
-		}
-			
+	}
+
 	static void andar5(int caract) {
 		int quinto;
 		System.out.println("Eu não achava que seria possível, mas você chegou ao 5º andar!");
@@ -797,10 +883,10 @@ public class ToRunAway {
 
 			if (quinto == 1 || quinto == 3 || quinto == 4) {
 				System.out.println("Esse não é o melhor caminho, tente outra vez!\n");
-			}else if(quinto == 2) {
+			} else if (quinto == 2) {
 				System.out.println("Muito bom!");
 				break;
-			}else {
+			} else {
 				System.out.println("Opção inválida!!");
 			}
 		} while (quinto != 2);
@@ -837,7 +923,7 @@ public class ToRunAway {
 						"Você está com muita sorte hein? Você abriu a porta do elevador, entre que você irá para o 4º andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
-				menu();
+				fimdejogo();
 			}
 		} else if (caract == 2) {
 			// desafio 2
@@ -860,7 +946,7 @@ public class ToRunAway {
 						"Você está com muita sorte hein? Você abriu a porta do elevador, entre que você irá para o 4º andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
-				menu();
+				fimdejogo();
 			}
 		} else {
 			// desafio 3
@@ -883,7 +969,7 @@ public class ToRunAway {
 						"Você está com muita sorte hein? Você abriu a porta do elevador, entre que você irá para o 4º andar!!");
 			} else {
 				System.out.println("Resposta errada! GAME OVER!");
-				menu();
+				fimdejogo();
 			}
 		}
 	}
@@ -1060,7 +1146,7 @@ public class ToRunAway {
 					+ "M. `MMM' .M 88 .88'  88.  ... 88          \r\n"
 					+ "MMb     dMM 8888P'   `88888P' dP       oo \r\n"
 					+ "MMMMMMMMMMM                               \r\n" + "                                          ");
-			menu();
+			fimdejogo();
 
 		}
 	}
@@ -1417,70 +1503,66 @@ public class ToRunAway {
 
 	}
 
-	static void andar6() {		
+	static void andar6() {
 
 		int respost;
 
-	System.out.println("Departamento de Recursos Humanos\n");
-    System.out.println("Estavamos aguardando você, sua presença aqui NÃO É BEM VINDA, por isso se prepare");
-    System.out.println ("Neste andar, nosso sistema de segurança, esta integrado ao sistema de combate a incêndio"
-    + "Para acessar o 5º andar tera que decidir entre os comandos de acesso, qual o correto.\n"
-    + "O sistema de combate a incêndio é dotado de Bombas de Vácuo que em caso de acionamento todo Oxigênio do andar será sequestrado.\n"
-    + "Você terá apenas uma chance para acertar a questão e não ficar sem oxigênio. Analise bem a questão e boa sorte! RSRS	\n"
-    + "Se o código escolhido estiver correto será disponibilizado, uma máscara conectada a um cilindro de oxigênio.\n"
-    + "Vamos ao que interessa? \n");
-    System.out.println("QUESTÃO: Escolha a função correta que some a idade do jogador + o número deste andar; o código sendo escolhido de forma correta o \n"
-    		+ "jogador terá acesso ao 5º andar, caso erre o oxigênio será sequestrado e você perderá o jogo! \n");
+		System.out.println("Departamento de Recursos Humanos\n");
+		System.out.println("Estavamos aguardando você, sua presença aqui NÃO É BEM VINDA, por isso se prepare");
+		System.out.println("Neste andar, nosso sistema de segurança, esta integrado ao sistema de combate a incêndio"
+				+ "Para acessar o 5º andar tera que decidir entre os comandos de acesso, qual o correto.\n"
+				+ "O sistema de combate a incêndio é dotado de Bombas de Vácuo que em caso de acionamento todo Oxigênio do andar será sequestrado.\n"
+				+ "Você terá apenas uma chance para acertar a questão e não ficar sem oxigênio. Analise bem a questão e boa sorte! RSRS	\n"
+				+ "Se o código escolhido estiver correto será disponibilizado, uma máscara conectada a um cilindro de oxigênio.\n"
+				+ "Vamos ao que interessa? \n");
+		System.out.println(
+				"QUESTÃO: Escolha a função correta que some a idade do jogador + o número deste andar; o código sendo escolhido de forma correta o \n"
+						+ "jogador terá acesso ao 5º andar, caso erre o oxigênio será sequestrado e você perderá o jogo! \n");
 
+		// Comando 1
+		do {
+			System.out.println("De acordo com o enunciado, qual a opção correta? \n");
+			System.out.println("Opção 1: Public static void main(String args[]){\n" + "int var1;\n" + "int var2;\n"
+					+ "var1 = 18;\n" + "var2= 06;\n" + "int resul = var1 + var2;\n" + "System.out.println (resul);\n"); // resposta
+																														// correta
+			System.out.println("Opção 2: Public static void main (String args[]){\n;" + "int var1\n" + "int var2\n"
+					+ "var1 = 18\n" + "var2= O6\n" + "System.out.println (var1  + var2);\n");
+			System.out.println("Opção 3: Public static void main (String args[]){\n" + "int var1\n" + "int var2\n"
+					+ "var1 = 18\n" + "var2 = 06\n" + "int resul = var1 + var2;\n" + "Systen.out.printlm (resul)\n");
+			System.out.println("Opção 4: Public static void maim(String args[]){\n" + "int var1\n" + "int var2\n"
+					+ "var1 = 18\n" + "var2 = 06\n" + "resul = var1 + var2;" + "System.out.println (resul)\n");
+			// em caso de uma escolha invalida, o jogador perderá o jogo!.
+			System.out.println("Qual a opção correta?");
+			respost = entrada.nextInt();
 
-    
- // Comando 1
-	do{System.out.println("De acordo com o enunciado, qual a opção correta? \n");
-    System.out.println("Opção 1: Public static void main(String args[]){\n"
-    		+ "int var1;\n"
-    		+ "int var2;\n"
-    		+ "var1 = 18;\n"
-    		+ "var2= 06;\n"
-    		+ "int resul = var1 + var2;\n"
-    		+ "System.out.println (resul);\n"); //resposta correta
-    System.out.println("Opção 2: Public static void main (String args[]){\n;"
-            + "int var1\n"
-            + "int var2\n"
-            + "var1 = 18\n"
-            + "var2= O6\n"
-            + "System.out.println (var1  + var2);\n");
-    System.out.println("Opção 3: Public static void main (String args[]){\n"
-            + "int var1\n"
-            + "int var2\n"
-            + "var1 = 18\n"
-            + "var2 = 06\n"
-            + "int resul = var1 + var2;\n"
-            + "Systen.out.printlm (resul)\n");
-    System.out.println("Opção 4: Public static void maim(String args[]){\n"
-    		+ "int var1\n"
-       		+ "int var2\n"
-    		+ "var1 = 18\n"
-       		+ "var2 = 06\n"
-       		+ "resul = var1 + var2;"
-    		+ "System.out.println (resul)\n");
-            // em caso de uma escolha invalida, o jogador perderá o jogo!.	   
-    System.out.println("Qual a opção correta?");
-    respost = entrada.nextInt();
+			if (respost == 1) {
+				System.out.println(
+						"Você escapou dessa, parabéns! Mas ainda não é sua salvação.. muito te espera.. siga para o 5 andar!");
+			} else if (respost == 2 || respost == 3 || respost == 4) {
+				System.out.println("OXIGÊNIO SEQUESTRADO.. GAME OVER!!");
+				menu();
+			} else {
+				System.out.println("Resposta inválida, preste atenção!");
 
-    if(respost == 1) {
-    	System.out.println("Você escapou dessa, parabéns! Mas ainda não é sua salvação.. muito te espera.. siga para o 5 andar!");
-    }else if(respost == 2 || respost == 3 ||respost == 4) {
-    	System.out.println("OXIGÊNIO SEQUESTRADO.. GAME OVER!!");
-    	menu();
-    }else {
-    	System.out.println("Resposta inválida, preste atenção!");
+			}
 
-    }
+		} while (respost != 1 && respost == 2 && respost != 3 && respost != 4);
+	}
 
-	}while(respost != 1 && respost == 2 && respost != 3 && respost != 4 );
-}	
-	
- 
+	static void fimdejogo() {
+		String nome = menu();
+		int caract = caracteristica();
+		andar9(nome, caract);
+		andar8(caract);
+		andar7();
+		andar6();
+		andar5(caract);
+		andar4();
+		andar3(caract);
+		andar2();
+		terreo(nome);
+	}
+
 	public static void main(String[] args) {
 		String nome = menu();
 		int caract = caracteristica();
