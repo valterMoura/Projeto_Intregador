@@ -179,8 +179,8 @@ public class ToRunAway {
 
 		if (caract == 2) {
 			System.out.println(
-					"Para desativar o sistema de segurança, você precisará da senha de acesso.\nA mesma é composta por  "
-							+ " três digitos, e a soma dos três digito é igual a 20.\nsenha:__+__+__= 20\n"); // continuar
+					"Para desativar o sistema de segurança, você precisará da senha de acesso.\nA mesma é composta por "
+							+ "três digitos, e a soma dos três digitos é igual a 20.\nsenha:__+__+__= 20\n"); // continuar
 																												// com
 																												// informações
 																												// da
@@ -308,7 +308,7 @@ public class ToRunAway {
 						+ "PORTA: Saindo pela porta você poderá descer pela escada ou pelo elevador, mas existe a chance de encontrar algum segurança que \n"
 						+ "está vindo te prender!\n"
 						+ "JANELA: Saindo pela janela você encontrará uma escada externa de saída de emergência. Com ela você pode acessar o andar abaixo, porém\n"
-						+ " devido as condições atuais do prédio não tem como saber o estado de conservação da mesma.\n"
+						+ "devido as condições atuais do prédio não tem como saber o estado de conservação da mesma.\n"
 						+ "DUTO DE AR: Saindo pelo duto de ar você poderá acessar as salas vizinhas ou a central de ar, que dá acesso ao andar de baixo. Porém \n"
 						+ "teria que passar por um corredor, aonde os seguranças estão te procurando!");
 		System.out.println("Só uma saída te permitirá acessar o 8º andar, qual você irá arriscar? \n" + "1 - Janela;\n"
@@ -590,7 +590,7 @@ public class ToRunAway {
 
 			} else if (decisao == 2) {
 
-				System.out.println("Muito bem! Agora complete o desafio para liberar sua passagem\n");
+				System.out.println("Muito bem! Agora complete o desafio para liberar sua passagem para o 7º andar.\n");
 
 			} else if (decisao == 3) {
 
@@ -605,9 +605,11 @@ public class ToRunAway {
 			}
 
 		} while (decisao != 2);
-
+		
+		
+		 
 		if (caract == 1) {
-			// Primeiro desafio
+			// Primeiro desafio			
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
 
@@ -623,9 +625,13 @@ public class ToRunAway {
 			case 3:
 				System.out.println("Resposta errada! GAME OVER!");
 				fimdejogo();
-			case 1:
-				System.out.println("Muito bem! Você acertou o desafio, entre que você irá para o 7º andar!");
+			case 1:				
+				break;
+				default:
+					System.out.println("Resposta inválida! GAME OVER!");
+					fimdejogo();													
 			}
+		  
 
 		} else if (caract == 2) {
 			// Segundo desafio
@@ -643,11 +649,14 @@ public class ToRunAway {
 			case 3:
 				System.out.println("Resposta errada! GAME OVER!");
 				fimdejogo();
-			case 2:
-				System.out.println("Muito bem! Você acertou o desafio, entre que você irá para o 7º andar!");
+			case 2:				
+				break;
+			   default:
+				System.out.println("Resposta inválida! GAME OVER!");
+				fimdejogo();
 			}
 
-		} else {
+		} else if(caract==3) {
 			// Terceiro desafio
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
@@ -664,8 +673,11 @@ public class ToRunAway {
 			case 3:
 				System.out.println("Resposta errada! GAME OVER!");
 				fimdejogo();
-			case 2:
-				System.out.println("Muito bem! Você acertou o desafio, entre que você irá para o 7º andar!");
+			case 2:				
+				break;
+			default:
+				System.out.println("Resposta inválida! GAME OVER!");
+				fimdejogo();
 			}
 
 		}
@@ -729,6 +741,10 @@ public class ToRunAway {
 				fimdejogo();
 			case 1:
 				System.out.println("Parabéns! Você acertou o desafio, entre que você irá para o 2º andar!");
+				break;
+			default:
+				System.out.println("Resposta inválida! GAME OVER!");
+				fimdejogo();
 			}
 
 		} else if (caract == 2) {
@@ -751,6 +767,10 @@ public class ToRunAway {
 				fimdejogo();
 			case 1:
 				System.out.println("Parabéns! Você acertou o desafio, entre que você irá para o 2º andar!");
+				break;
+			default:
+				System.out.println("Resposta inválida! GAME OVER!");
+				fimdejogo();
 
 			}
 
@@ -775,6 +795,10 @@ public class ToRunAway {
 				fimdejogo();
 			case 2:
 				System.out.println("Parábens! Você acertou o desafio, entre que você irá para o 2º andar!");
+				break;
+			default:
+				System.out.println("Resposta inválida! GAME OVER!");
+				fimdejogo();
 			}
 
 		}
