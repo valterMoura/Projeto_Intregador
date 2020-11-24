@@ -577,7 +577,7 @@ public class ToRunAway {
 						+ "a cumprir para garantir sua passagem para o 7º andar \n");
 
 		do {
-			// Decisão
+			// Decisão do jogador
 			System.out.println(
 					"Escolha sua opção: \n" + "1 - Elevador\n" + "2 - Escada\n" + "3 - Duto de ar\n" + "4 - Janela");
 
@@ -609,7 +609,7 @@ public class ToRunAway {
 		
 		 
 		if (caract == 1) {
-			// Primeiro desafio			
+			// Desafio caso o jogador escolha a opção de habilidade 1	
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
 
@@ -634,7 +634,7 @@ public class ToRunAway {
 		  
 
 		} else if (caract == 2) {
-			// Segundo desafio
+			// Desafio caso o jogador escolha a opção de habilidade 2
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
 
@@ -657,7 +657,7 @@ public class ToRunAway {
 			}
 
 		} else if(caract==3) {
-			// Terceiro desafio
+			// Desafio caso o jogador escolha a opção de habilidade 3
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
 
@@ -722,7 +722,7 @@ public class ToRunAway {
 		} while (decisao != 1);
 
 		if (caract == 1) {
-			// Primeiro desafio
+			// Desafio caso o jogador escolha a opção de habilidade 1
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
 			System.out.println("ALGORITMO: \n" + "int N=10 \n" + "for(int i=1; i<=N; i++){\n"
@@ -748,7 +748,7 @@ public class ToRunAway {
 			}
 
 		} else if (caract == 2) {
-			// Segundo Desafio
+			// Desafio caso o jogador escolha a opção de habilidade 2
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
 
@@ -775,7 +775,7 @@ public class ToRunAway {
 			}
 
 		} else {
-			// Terceiro desafio
+			// Desafio caso o jogador escolha a opção de habilidade 3
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
 
