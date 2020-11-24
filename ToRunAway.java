@@ -719,7 +719,7 @@ public class ToRunAway {
 						"A sala de segurança está trancada! tente outra rota de fuga, se apresse porque os seguranças estão chegando! \n");
 
 			}else {
-				System.out.println("Oção inválida! Tente outra\n");
+				System.out.println("Opção inválida! Tente outra\n");
 			}
 
 		} while (decisao != 1);
