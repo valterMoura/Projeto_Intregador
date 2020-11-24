@@ -597,11 +597,12 @@ public class ToRunAway {
 				System.out.println(
 						"Os dutos de ar estão bloqueados nesse andar! tente outra rota de fuga, mas se apresse porque os seguranças estão chegando! \n");
 
-			} else {
+			} else if (decisao==4){
 
 				System.out.println(
 						"A janela deste andar está emperrada! tente outra rota de fuga, mas se apresse porque os seguranças estão chegando! \n");
-
+			}else {
+				System.out.println("Opção inválida! Tente outra\n");
 			}
 
 		} while (decisao != 2);
@@ -713,10 +714,12 @@ public class ToRunAway {
 				System.out.println(
 						"A sala de comunicação foi fechada pelos seguranças! tente outra rota de fuga, mas se apresse porque os seguranças estão chegando! \n");
 
-			} else {
+			} else if ( decisao==4){
 				System.out.println(
 						"A sala de segurança está trancada! tente outra rota de fuga, se apresse porque os seguranças estão chegando! \n");
 
+			}else {
+				System.out.println("Oção inválida! Tente outra\n");
 			}
 
 		} while (decisao != 1);
