@@ -608,52 +608,73 @@ public class ToRunAway {
 		} while (decisao != 2);
 		
 		
-		 
-		if (caract == 1) {
+		int tentativa=1;
+		 int resposta;
+		if (caract == 1) {			
 			// Desafio caso o jogador escolha a opção de habilidade 1	
+			
 			System.out.println(
-					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
+					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
+					+ "Você terá apenas 3 tentativas, por isso preste muita atenção! \n");
 
+			do {
 			System.out.println("ALGORITMO: \n" + "int N=14; \n" + "if (N%2==0){\n" + "   System.out.println('X') \n"
 					+ "}else{ \n" + "   System.out.println('Y')\n" + "}\n");
-
+			
 			System.out.println("1) X\n" + "2) Y\n" + "3) Z\n");
 			System.out.println("Qual é a opção correta? ");
-			int resposta = entrada.nextInt();
+			
+			resposta = entrada.nextInt();
 
 			switch (resposta) {
 			case 2:
 			case 3:
-				System.out.println("Resposta errada! GAME OVER!");
-				fimdejogo();
+				System.out.println("Resposta errada! Tente novamente");	
+				tentativa++;							
+				break;				
 			case 1:				
 				break;
 				default:
-					System.out.println("Resposta inválida! GAME OVER!");
-					fimdejogo();													
+					System.out.println("Resposta inválida!");
+					tentativa++;					
 			}
-		  
-
+			
+	     }while(tentativa<=3 && resposta!=1);
+			
+			if(resposta!=1) {
+				System.out.println("GAME OVER!!\n");
+				fimdejogo();
+			}
+			
+			
 		} else if (caract == 2) {
 			// Desafio caso o jogador escolha a opção de habilidade 2
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
-
+			do {
 			System.out.println("ALGORITMO: \n" + "int N=-13; \n" + "if (N<0 && N%2==0){\n"
 					+ "   System.out.println('X')\n" + "}else{ \n" + "   System.out.println('Y')\n" + "{\n");
 			System.out.println("1) X\n" + "2) Y\n" + "3) Z\n");
 			System.out.println("Qual é a opção correta? ");
-			int resposta = entrada.nextInt();
+			resposta = entrada.nextInt();
 
 			switch (resposta) {
 			case 1:
 			case 3:
-				System.out.println("Resposta errada! GAME OVER!");
-				fimdejogo();
+				System.out.println("Resposta errada! Tente novamente");	
+				tentativa++;
+				break;
 			case 2:				
 				break;
 			   default:
-				System.out.println("Resposta inválida! GAME OVER!");
+				System.out.println("Resposta inválida! Tente novamente");
+				tentativa++;
+			}
+			
+		  }while (tentativa<=3 && resposta!=2);
+			
+			if(resposta!=2) {
+				System.out.println("GAME OVER!!\n");
 				fimdejogo();
 			}
 
@@ -661,25 +682,35 @@ public class ToRunAway {
 			// Desafio caso o jogador escolha a opção de habilidade 3
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
+			do {
 
 			System.out.println("ALGORITMO: \n" + "int N=-14; \n" + "if (N>0){\n" + "   System.out.println('X') \n"
 					+ "}else{ \n" + "   System.out.println('Y')\n" + "}\n");
 
 			System.out.println("1) X\n" + "2) Y\n" + "3) Z\n");
 			System.out.println("Qual é opção correta? ");
-			int resposta = entrada.nextInt();
+			resposta = entrada.nextInt();
 
 			switch (resposta) {
 			case 1:
 			case 3:
-				System.out.println("Resposta errada! GAME OVER!");
-				fimdejogo();
+				System.out.println("Resposta errada! Tente novamente");
+				tentativa++;
+				break;
 			case 2:				
 				break;
 			default:
-				System.out.println("Resposta inválida! GAME OVER!");
+				System.out.println("Resposta inválida! Tente novamente");
+				tentativa++;
+				break;
+			}
+		 }while(tentativa<=3 && resposta!=2);
+			
+			if(resposta!=2) {
+				System.out.println("GAME OVER!!\n");
 				fimdejogo();
 			}
+			
 
 		}
 
