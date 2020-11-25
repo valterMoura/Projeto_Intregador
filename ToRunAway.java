@@ -1,4 +1,4 @@
-//package Projeto_Intregador;
+package Projeto_Intregador;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -843,6 +843,9 @@ public class ToRunAway {
 		double caract = Math.random() * 3;
 		System.out.println("Você está surpreendendo,  já está no 4º andar!");
 
+		// primeiro o jogador terá uma decisão a tomar, e após a decisão correta o desafio será lançado.
+		//caso erre o desafio, perderá o jogo!
+		
 		do {
 			System.out.println(
 					"Agora, para você chegar ao 3º andar precisará descobrir em qual das salas está a passagem dos dutos de ar. Existe em somente uma das 4 salas do andar. \n"
@@ -863,6 +866,8 @@ public class ToRunAway {
 		} while (quarto != 3);
 
 		System.out.println("Agora que você encontrou o duto, preencha o algoritmo para liberar sua entrada!!\n");
+		
+		//nessa etapa do jogo foi utilizado o método Random para definir o desafio a ser cumprido.
 
 		if (Math.ceil(caract) == 1) {
 			// desafio 1
@@ -927,8 +932,9 @@ public class ToRunAway {
 
 	static void andar5(int caract) {
 		int quinto;
-		System.out.println("Eu não achava que seria possível, mas você chegou ao 5º andar!");
+		System.out.println("SEJA BEM VINDO! (OU NÃO.. RSRSRS");
 
+		//após tomar a decisão a seguir, terá um desafio que somente a resposta correta permitirá chegar ao próximo andar
 		do {
 			System.out.println(
 					"Agora, para descer mais um andar você precisa decidir qual sentido pegar. Essa sala só possui uma saída, então é inevitável \n"
@@ -957,6 +963,8 @@ public class ToRunAway {
 		System.out
 				.println("Ok, você chegou ao elevador! Para abrir a porta, você precisa responder a questão abaixo:\n");
 
+		// o desafio será definido conforme o jogador definiu no início do jogo a característica de força e inteligência
+		
 		if (caract == 1) {
 			// desafio 1
 			System.out.println("Observe o enunciado abaixo e escolha o código que foi utilizado corretamente: \n"
@@ -1048,6 +1056,8 @@ public class ToRunAway {
 		if (terreo == 1) {
 			System.out.println("Ok, deixa eu te explicar! ");
 		}
+		//utilizado o modo aleatório collection shuffle para desenvolver essa questão.
+		//o jogador deverá acertar dois desafios para vencer a reta final do jogo, fugir e provar sua inocência. 
 
 		ArrayList<String> alternativas = new ArrayList<String>();
 		alternativas.add("Verdadeiro (true);"); // alternativa correta
@@ -1119,6 +1129,9 @@ public class ToRunAway {
 
 		int[] vetor = new int[5];
 		int[] vetorCorreto = { 2, 6, 11, 16, 18 };
+		
+		//vetor. As respostas dos próximos desafios criará um vetor que comparado com o já existente irá decidir o final do jogo.
+		//todas as respostas devem ser corretas para que o vetor coincida com o já existente.
 
 		System.out.println(
 				"Mais um ponto para você, o sistema de iluminação foi desativado e as portas estão destravadas! Agora só falta despistar os seguranças..\n"
@@ -1179,6 +1192,7 @@ public class ToRunAway {
 		if (Arrays.equals(vetor, vetorCorreto)) {
 			System.out.println("Sistema de incêndio ativado. Seguranças foram distraídos e você escapou!!!\n"
 					+ "Parabéns! Você conseguiu provar suas habilidades!!! Agora é só comemorar!! \n\n"
+					+ "Saindo do prédio e com os conhecimentos que você mostrou possuir, sem dúvida conseguirá provar sua inocência!\n\n"
 					+ "   .* *.               `o`o`\r\n" + "         *. .*              o`o`o`o      ^,^,^\r\n"
 					+ "           * \\               `o`o`     ^,^,^,^,^\r\n"
 					+ "              \\     ***        |       ^,^,^,^,^\r\n"
