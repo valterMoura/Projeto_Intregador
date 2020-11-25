@@ -613,33 +613,29 @@ public class ToRunAway {
 		if (caract == 1) {			
 			// Desafio caso o jogador escolha a opção de habilidade 1	
 			
-			System.out.println(
-					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
-					+ "Você terá apenas 3 tentativas, por isso preste muita atenção! \n");
+			System.out.println("Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
+					+"Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção! \n");
 
 			do {
 			System.out.println("ALGORITMO: \n" + "int N=14; \n" + "if (N%2==0){\n" + "   System.out.println('X') \n"
 					+ "}else{ \n" + "   System.out.println('Y')\n" + "}\n");
 			
 			System.out.println("1) X\n" + "2) Y\n" + "3) Z\n");
-			System.out.println("Qual é a opção correta? ");
-			
+			System.out.println("Qual é a opção correta? Tentativa " + tentativa++);			
 			resposta = entrada.nextInt();
 
 			switch (resposta) {
 			case 2:
 			case 3:
-				System.out.println("Resposta errada! Tente novamente");	
-				tentativa++;							
+				System.out.println("Resposta errada!\n");												
 				break;				
 			case 1:				
 				break;
 				default:
-					System.out.println("Resposta inválida!");
-					tentativa++;					
+					System.out.println("Resposta inválida!\n");										
 			}
 			
-	     }while(tentativa<=3 && resposta!=1);
+	     }while(tentativa<=2 && resposta!=1);
 			
 			if(resposta!=1) {
 				System.out.println("GAME OVER!!\n");
@@ -650,28 +646,27 @@ public class ToRunAway {
 		} else if (caract == 2) {
 			// Desafio caso o jogador escolha a opção de habilidade 2
 			System.out.println(
-					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
+					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
+					+ "Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção!\n");
 			do {
 			System.out.println("ALGORITMO: \n" + "int N=-13; \n" + "if (N<0 && N%2==0){\n"
 					+ "   System.out.println('X')\n" + "}else{ \n" + "   System.out.println('Y')\n" + "{\n");
 			System.out.println("1) X\n" + "2) Y\n" + "3) Z\n");
-			System.out.println("Qual é a opção correta? ");
+			System.out.println("Qual é a opção correta? Tentativa " + tentativa++);
 			resposta = entrada.nextInt();
 
 			switch (resposta) {
 			case 1:
 			case 3:
-				System.out.println("Resposta errada! Tente novamente");	
-				tentativa++;
+				System.out.println("Resposta errada!\n");					
 				break;
 			case 2:				
 				break;
 			   default:
-				System.out.println("Resposta inválida! Tente novamente");
-				tentativa++;
+				System.out.println("Resposta inválida!\n");
 			}
 			
-		  }while (tentativa<=3 && resposta!=2);
+		  }while (tentativa<=2 && resposta!=2);
 			
 			if(resposta!=2) {
 				System.out.println("GAME OVER!!\n");
@@ -681,30 +676,28 @@ public class ToRunAway {
 		} else if(caract==3) {
 			// Desafio caso o jogador escolha a opção de habilidade 3
 			System.out.println(
-					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
+					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n "
+					+ "Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção! \n");
 			do {
 
 			System.out.println("ALGORITMO: \n" + "int N=-14; \n" + "if (N>0){\n" + "   System.out.println('X') \n"
 					+ "}else{ \n" + "   System.out.println('Y')\n" + "}\n");
 
 			System.out.println("1) X\n" + "2) Y\n" + "3) Z\n");
-			System.out.println("Qual é opção correta? ");
+			System.out.println("Qual é opção correta? Tentativa " + tentativa++);
 			resposta = entrada.nextInt();
 
 			switch (resposta) {
 			case 1:
 			case 3:
-				System.out.println("Resposta errada! Tente novamente");
-				tentativa++;
+				System.out.println("Resposta errada!\n");
 				break;
 			case 2:				
 				break;
 			default:
-				System.out.println("Resposta inválida! Tente novamente");
-				tentativa++;
-				break;
+				System.out.println("Resposta inválida!\n");				
 			}
-		 }while(tentativa<=3 && resposta!=2);
+		 }while(tentativa<=2 && resposta!=2);
 			
 			if(resposta!=2) {
 				System.out.println("GAME OVER!!\n");
@@ -755,83 +748,106 @@ public class ToRunAway {
 
 		} while (decisao != 1);
 
+		int tentativa=1;
+		int resposta;
 		if (caract == 1) {
 			// Desafio caso o jogador escolha a opção de habilidade 1
 			System.out.println(
-					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
+					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
+					+ "Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção! \\n\n");
+			do {
 			System.out.println("ALGORITMO: \n" + "int N=10 \n" + "for(int i=1; i<=N; i++){\n"
 					+ "      if (N%i==0 && i%2==0){\n" + "          System.out.println(i)\n " + "  } \n" + "}\n");
 			System.out.println("1) Deverá ser impresso os divisores pares de N.\n"
 					+ "2) Deverá ser impresso os múltiplos pares de N.\n"
 					+ "3) Deverá ser impresso os múltiplos ímpares de N.\n");
 
-			System.out.println("Qual a opção correta? ");
-			int resposta = entrada.nextInt();
+			System.out.println("Qual a opção correta? Tentativa " + tentativa ++);
+			resposta = entrada.nextInt();
 
 			switch (resposta) {
 			case 2:
 			case 3:
-				System.out.println("Resposta errada! GAME OVER!");
-				fimdejogo();
+				System.out.println("Resposta errada!");
+				break;				
 			case 1:
 				System.out.println("Parabéns! Você acertou o desafio, entre que você irá para o 2º andar!");
 				break;
 			default:
-				System.out.println("Resposta inválida! GAME OVER!");
+				System.out.println("Resposta inválida!");		
+			}
+			
+		 }while(tentativa<=2 && resposta!=1);	
+			
+			if(resposta!=1) {
+				System.out.println("GAME OVER!!");
 				fimdejogo();
 			}
 
 		} else if (caract == 2) {
 			// Desafio caso o jogador escolha a opção de habilidade 2
 			System.out.println(
-					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
+					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
+					+ "Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção! \n");
+			do {
 
 			System.out.println("ALGORITMO: \n" + "int N=10 \n" + "for(int i=1; i<=N; i++){\n"
 					+ "      if (N%i==0 && i%2!=0){\n" + "          System.out.println(i)\n " + "  } \n" + "}\n");
 			System.out.println("1) Deverá ser impresso os divisores ímpares de N.\n"
 					+ "2) Deverá ser impresso os divisores pares de N.\n"
 					+ "3) Deverá ser impresso os múltiplos ímpares de N.\n");
-			System.out.println("Qual a opção correta? ");
-			int resposta = entrada.nextInt();
+			System.out.println("Qual a opção correta? Tentativa " + tentativa++);
+		    resposta = entrada.nextInt();
 
 			switch (resposta) {
 			case 2:
 			case 3:
-				System.out.println("Resposta errada! GAME OVER!");
-				fimdejogo();
+				System.out.println("Resposta errada!");
+				break;				
 			case 1:
 				System.out.println("Parabéns! Você acertou o desafio, entre que você irá para o 2º andar!");
 				break;
 			default:
-				System.out.println("Resposta inválida! GAME OVER!");
+				System.out.println("Resposta inválida!");
+			}
+		 }while (tentativa<=2 && resposta!=1);
+			
+			if (resposta!=1) {
+				System.out.println("GAME OVER!!");
 				fimdejogo();
-
 			}
 
 		} else {
 			// Desafio caso o jogador escolha a opção de habilidade 3
 			System.out.println(
-					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n");
-
+					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
+					+ "Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção! \n");
+			do {
+				
 			System.out.println("ALGORITMO: \n" + "int N=10 \n" + "for(int i=1; i<=N; i++){\n" + "    if (N%i==0){\n"
 					+ "      System.out.println(i)\n " + "  } \n" + "}\n");
 
 			System.out.println("1) Devera ser impresso os múltiplos de N.\n"
 					+ "2) Deverá ser impresso os divisores de N.\n" + "3) Deverá ser impresso o fatorial  de N.\n");
 
-			System.out.println("Qual a opção correta? ");
-			int resposta = entrada.nextInt();
+			System.out.println("Qual a opção correta? Tentativa " + tentativa++);
+			resposta = entrada.nextInt();
 
 			switch (resposta) {
 			case 1:
 			case 3:
-				System.out.println("Resposta errada! GAME OVER!");
-				fimdejogo();
+				System.out.println("Resposta errada!");
+				break;			
 			case 2:
 				System.out.println("Parábens! Você acertou o desafio, entre que você irá para o 2º andar!");
 				break;
 			default:
-				System.out.println("Resposta inválida! GAME OVER!");
+				System.out.println("Resposta inválida!");			
+			}
+		 }while(tentativa<=2 && resposta!=2);
+			
+			if (resposta!=2) {
+				System.out.println("GAME OVER!!");
 				fimdejogo();
 			}
 
