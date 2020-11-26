@@ -1,4 +1,4 @@
-package Projeto_Intregador;
+//package Projeto_Intregador;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -1353,9 +1353,9 @@ public class ToRunAway {
 			if (escolhas[1] == 3) {
 				System.out.println(
 						"O computador roda o código, mas mensagens de erro são exibidas. Você tenta corrir o código, mas nada ");
-				System.out.println(
+				/*System.out.println(
 						"funciona. Após algumas tentativas, você perde noção do tempo e o segurança aparece atrás de");
-				System.out.println("você e detém você!");
+				System.out.println("você e detém você!");*/
 				System.out.println("Resposta errada.");
 			}
 
@@ -1364,7 +1364,7 @@ public class ToRunAway {
 			}
 			if (tentativas == 1) {
 				System.out.println("GAME OVER\n");
-				menu();
+				fimdejogo();
 			}
 
 		} while (escolhas[1] != 1);
@@ -1385,7 +1385,7 @@ public class ToRunAway {
 				"passagem entre os dois cubículos por onde você passaria; há pilhas de caixas que não era visível ");
 		System.out.println("antes. E passar por cima seria algo notado.");
 		System.out.println(
-				"Os dois cubículos perto de você estão vagos. Você em um de decide usar suas habilidades para derubar ");
+				"Os dois cubículos perto de você estão vagos. Você em um, decide usar suas habilidades para derubar ");
 		System.out
 				.println("a rede e tentar fazer algumas pessoas fazerem uma pausa e iram ao refeitório para um café.");
 		System.out.println("No computador você acessa o roteador novamente. Bloqueia todos e coloca uma senha.");
