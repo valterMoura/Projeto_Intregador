@@ -1,7 +1,7 @@
 package PI.Projeto_Intregador;
 
 public class Teste3andar {
-	
+	static int numero=9;
 	static void TesteDecisao3andar() {
 		System.out.println(
 				"Parabéns, você chegou ao 3º andar, Você está quase saindo, falta pouco! Agora você terá que tomar mais uma importante decisão.\n");
@@ -9,7 +9,7 @@ public class Teste3andar {
 				+ " Apenas uma das opções abaixo é a correta. \nApós escolher a opção correta você terá um desafio "
 				+ "a cumprir para garantir sua passagem para o 2º andar. \n");
 		
-		for (int decisao=0; decisao<=4; decisao++) {
+		for (int decisao=0; decisao<=numero; decisao++) {
 			System.out.println("Teste decisão com a opção: " + decisao);
 			do {
 				// Decisão
@@ -53,7 +53,7 @@ public class Teste3andar {
 		System.out.println(
 				"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
 				+ "Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção! \\n\n");
-		for (int resposta=0; resposta<=3; resposta++) {
+		for (int resposta=0; resposta<=numero; resposta++) {
 			System.out.println("Teste desafio com a opção: " + resposta);
 			
 			if (caract == 1) {
