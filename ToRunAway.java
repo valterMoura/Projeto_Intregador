@@ -609,9 +609,9 @@ public class ToRunAway {
 		
 		
 		int tentativa=1;
-		 int resposta;
-		if (caract == 1) {			
-			// Desafio caso o jogador escolha a opção de habilidade 1	
+		int resposta;
+		if (caract == 1) { 
+			// Desafio caso o jogador escolha a opção de habilidade 1, Resposta certa: 1
 			
 			System.out.println("Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
 					+"Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção! \n");
@@ -644,7 +644,7 @@ public class ToRunAway {
 			
 			
 		} else if (caract == 2) {
-			// Desafio caso o jogador escolha a opção de habilidade 2
+			// Desafio caso o jogador escolha a opção de habilidade 2, Resposta certa: 2
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
 					+ "Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção!\n");
@@ -674,7 +674,7 @@ public class ToRunAway {
 			}
 
 		} else if(caract==3) {
-			// Desafio caso o jogador escolha a opção de habilidade 3
+			// Desafio caso o jogador escolha a opção de habilidade 3, Resposta certa: 2
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n "
 					+ "Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção! \n");
@@ -751,7 +751,7 @@ public class ToRunAway {
 		int tentativa=1;
 		int resposta;
 		if (caract == 1) {
-			// Desafio caso o jogador escolha a opção de habilidade 1
+			// Desafio caso o jogador escolha a opção de habilidade 1, Resposta certa: 1
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
 					+ "Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção! \\n\n");
@@ -785,7 +785,7 @@ public class ToRunAway {
 			}
 
 		} else if (caract == 2) {
-			// Desafio caso o jogador escolha a opção de habilidade 2
+			// Desafio caso o jogador escolha a opção de habilidade 2, Reposta certa: 1
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
 					+ "Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção! \n");
@@ -818,7 +818,7 @@ public class ToRunAway {
 			}
 
 		} else {
-			// Desafio caso o jogador escolha a opção de habilidade 3
+			// Desafio caso o jogador escolha a opção de habilidade 3, Resposta certa: 2
 			System.out.println(
 					"Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
 					+ "Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção! \n");
