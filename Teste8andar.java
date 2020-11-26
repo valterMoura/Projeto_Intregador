@@ -1,6 +1,7 @@
 package PI.Projeto_Intregador;
 
 public class Teste8andar {
+	static int numero=9; // Variável global número de testes
 	static void TesteDecisao8andar() {	//Teste de possibilidades de decisão do jogador			
 		System.out.println(
 				"Parabéns, você chegou ao 8º andar, agora se prepare porque ainda tem muito caminho pela frente!\n");
@@ -9,7 +10,7 @@ public class Teste8andar {
 						+ " Apenas uma das opções abaixo é a correta. Após escolher a opção \ncorreta você terá um desafio "
 						+ "a cumprir para garantir sua passagem para o 7º andar. \n");
 		
-		for (int decisao=0; decisao<=4; decisao++) {
+		for (int decisao=0; decisao<=numero; decisao++) {
 			System.out.println("Teste decisão com a opção: " + decisao);
 			
 				do {
@@ -56,7 +57,7 @@ public class Teste8andar {
 		int tentativa=1;
 		System.out.println("Observe o algoritmo escrito em java e escolha a opção correta do que deverá ser impresso na tela do programador.\n"
 				+"Você terá APENAS 2 TENTATIVAS, por isso preste muita atenção! \n");
-		for (int resposta=0; resposta<=3; resposta++) {
+		for (int resposta=0; resposta<=numero; resposta++) {
 			System.out.println("Teste desafio com a opção: " + resposta);	
 			
 			
@@ -93,7 +94,7 @@ public class Teste8andar {
 		}
 	}
   }
-	public static void main(String args[]) {
+	public static void main(String args[]) {		
 		TesteDecisao8andar();
 		TesteDesafio8andar();
 		
