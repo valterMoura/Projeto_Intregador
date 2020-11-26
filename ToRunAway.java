@@ -110,8 +110,8 @@ public class ToRunAway {
 				break;
 			default:
 				System.out.println("Opção inválida, renda-se e venha testar suas habilidades de jogador!");
-				menu();
-			}
+				fimdejogo();
+				}
 		} while (opcao == 3 || opcao == 2);
 		return nome;
 	}
@@ -564,7 +564,7 @@ public class ToRunAway {
 			}
 		}
 		System.out.println("");
-		// return reload;
+	
 	}
 
 	static void andar8(int caract) {
@@ -1349,6 +1349,7 @@ public class ToRunAway {
 						"em um dos cubículos! Seu código produziu um resultado errado. A pessoa grita, o segurança ");
 				System.out.println("vê e detém você.");
 				System.out.println("Resposta errada.");
+				fimdejogo();
 			}
 			if (escolhas[1] == 3) {
 				System.out.println(
@@ -1409,8 +1410,8 @@ public class ToRunAway {
 			System.out.println("e 'três erros emite alarme sonoro'");
 
 			System.out.println("Você pensa e considera três opções: ");
-			System.out.println("1) ++i");
-			System.out.println("2) i++");
+			System.out.println("1) i++");
+			System.out.println("2) ++i");
 			System.out.println("3) i+=1");
 			System.out.println("Qual a sua escolha?(1, 2 ou 3): ");
 			escolhas[2] = entrada.nextInt();
@@ -1442,8 +1443,7 @@ public class ToRunAway {
 
 		// Saída (todas)
 
-		System.out.println(
-				"Você observa que seria possível mover uma das pilhas de modo a permitir passagem, mas as caixas ");
+		
 
 		System.out.println("Qual dos três caminhos você escolhe: ");
 		System.out.println("1) Escadas normais");
@@ -1456,7 +1456,7 @@ public class ToRunAway {
 			System.out.println(
 					"Ao se aproximar das escadas, você ouve passos. Você se encosta na parede entre a porta e o ");
 			System.out.println("elevador. Um funcionário da limpeza sai das escadas sem ver você. Rapidamente, você ");
-			System.out.println("entra nas escadas e desce para o 1o andar.");
+			System.out.println("entra nas escadas e desce para o terreo.");
 		}
 		if (escolhas[3] == 2) {
 			System.out.println(
@@ -1465,14 +1465,14 @@ public class ToRunAway {
 					"Você fica entre o elevador e a janela, como se estivesse eperando e olhando o lado de fora. ");
 			System.out.println(
 					"Duas pessoas saem do elevador conversando e não percebem você. Você entra no elevador vazio e ");
-			System.out.println("desce para o 1o andar.");
+			System.out.println("desce para o terreo.");
 
 		}
 		if (escolhas[3] == 3) {
 			System.out.println(
 					"Você olha para ver se tem alguém vendo. O guarda e o técnico estão distantes discutindo sobre ");
 			System.out.println(
-					"os problemas no servidor. Você aproveita, abre a janela e desce pela escada até o 1o andar.");
+					"os problemas no servidor. Você aproveita, abre a janela e desce pela escada até o terreo.");
 		}
 
 	}
