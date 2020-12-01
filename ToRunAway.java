@@ -1353,9 +1353,9 @@ public class ToRunAway {
 			}
 			if (escolhas[1] == 3) {
 				System.out.println(
-						"O computador roda o código, mas mensagens de erro são exibidas. Você tenta corrir o código, mas nada ");
+						"O computador roda o código, mas mensagens de erro são exibidas. Você tenta corrir o código, mas nada funciona.");
 				/*System.out.println(
-						"funciona. Após algumas tentativas, você perde noção do tempo e o segurança aparece atrás de");
+						" Após algumas tentativas, você perde noção do tempo e o segurança aparece atrás de");
 				System.out.println("você e detém você!");*/
 				System.out.println("Resposta errada.");
 			}
@@ -1583,8 +1583,7 @@ public class ToRunAway {
 			}
 			if (tentativas == 1) {
 				System.out.println("GAME OVER\n");
-				// menu();
-				return;
+				fimdejogo();
 			}
 
 		} while (escolhas[2] != 2);
